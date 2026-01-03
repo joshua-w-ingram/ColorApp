@@ -204,6 +204,28 @@ function hslToRgb(h, s, l) {
     };
 }
 
+// Find the closest color name (for colorblind help!)
+function findClosestColorName(r, g, b) {
+    let closestColor = CRAYON_COLORS[0];
+    let smallestDistance = Infinity;
+
+    for (const color of CRAYON_COLORS) {
+        // Calculate how different the colors are
+        const distance = Math.sqrt(
+            Math.pow(r - color.r, 2) +
+            Math.pow(g - color.g, 2) +
+            Math.pow(b - color.b, 2)
+        );
+
+        if (distance < smallestDistance) {
+            smallestDistance = distance;
+            closestColor = color;
+        }
+    }
+
+    return closestColor.name;
+}
+
 // Convert RGB to CMYK (used for printing!)
 function rgbToCmyk(r, g, b) {
     let c = 1 - (r / 255);
@@ -274,9 +296,14 @@ function updateColorDisplay() {
     const hex = rgbToHex(r, g, b);
     const hsl = rgbToHsl(r, g, b);
     const cmyk = rgbToCmyk(r, g, b);
+    const colorName = findClosestColorName(r, g, b);
 
     // Update the color box
     colorBox.style.backgroundColor = hex;
+
+    // Update the color name display (helps colorblind people!)
+    document.getElementById('color-name-text').textContent = colorName;
+    document.getElementById('color-hex-text').textContent = hex.toUpperCase();
 
     // Update info displays
     hexDisplay.textContent = hex.toUpperCase();
