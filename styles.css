@@ -536,30 +536,33 @@ header h1 {
 }
 
 /* Photo Picker - Olivia's Feature! */
-#photo h2 {
-    margin-bottom: 8px;
-    color: var(--secondary);
+#photo {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 220px);
+    min-height: 400px;
 }
 
 .photo-instructions {
     color: var(--text-muted);
-    margin-bottom: 16px;
-    font-size: 0.95rem;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 #photo-upload-btn {
     display: block;
     width: 100%;
-    padding: 16px;
+    padding: 12px;
     background: linear-gradient(135deg, var(--success), #059669);
     border: none;
     border-radius: var(--radius);
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     transition: all 0.2s ease;
     box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
 }
@@ -569,21 +572,54 @@ header h1 {
     box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
 }
 
+#photo-result {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--surface);
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+}
+
+#photo-color-preview {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--surface-light);
+    border: 3px solid rgba(255,255,255,0.2);
+    flex-shrink: 0;
+}
+
+#photo-color-name {
+    font-weight: 700;
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+#photo-color-hex {
+    font-family: 'Courier New', monospace;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-left: auto;
+}
+
 #photo-container {
     background: var(--surface);
     border-radius: var(--radius);
-    padding: 16px;
-    min-height: 200px;
+    padding: 8px;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: auto;
+    min-height: 0;
 }
 
 #photo-canvas {
     max-width: 100%;
-    max-height: 400px;
+    max-height: 100%;
     border-radius: var(--radius-sm);
     cursor: crosshair;
     display: none;

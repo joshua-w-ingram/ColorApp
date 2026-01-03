@@ -147,10 +147,14 @@
 
             <!-- Photo Tab - Olivia's idea! -->
             <section id="photo" class="tab-panel">
-                <h2>Pick Color from Photo</h2>
-                <p class="photo-instructions">Pick a photo, then tap anywhere on it to get that color!</p>
+                <p class="photo-instructions">Pick a photo, then tap anywhere to get that color!</p>
                 <label id="photo-upload-btn" for="photo-input">Choose a Photo</label>
                 <input type="file" id="photo-input" accept="image/*" hidden>
+                <div id="photo-result">
+                    <div id="photo-color-preview"></div>
+                    <span id="photo-color-name">Pick a color!</span>
+                    <span id="photo-color-hex"></span>
+                </div>
                 <div id="photo-container">
                     <canvas id="photo-canvas"></canvas>
                     <p id="photo-placeholder">Your photo will appear here!</p>

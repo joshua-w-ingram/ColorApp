@@ -660,7 +660,13 @@ function initPhotoPicker() {
         syncHslSliders();
         updateColorDisplay();
 
+        // Update the photo result area
         const colorName = findClosestColorName(r, g, b);
+        const hex = rgbToHex(r, g, b);
+        document.getElementById('photo-color-preview').style.backgroundColor = hex;
+        document.getElementById('photo-color-name').textContent = colorName;
+        document.getElementById('photo-color-hex').textContent = hex.toUpperCase();
+
         showToast('Found: ' + colorName + '!', 'success');
     });
 }
