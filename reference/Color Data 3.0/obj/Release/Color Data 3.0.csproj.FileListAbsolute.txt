@@ -1,0 +1,27 @@
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Images\ApplicationIcon.png
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Images\Background.png
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Color Data 3.0.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Color Data 3.0.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\AppManifest.xaml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Color_Data_3._0.xap
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\colordata_controls.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\colordata_controls.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\App.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Data\ColorData.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Data\SetArrangement.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Data\SetData.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\MainPage.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Selectors\CameraSelector.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Selectors\LibrarySelector.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Selectors\ManualSelector.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\TestPage.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Color Data 3.0.g.resources
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Color Data 3.0.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Color Data 3.0.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\XapCacheFile.xml

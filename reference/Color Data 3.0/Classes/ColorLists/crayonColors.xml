@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ColorNames>
+	<Color name="Almond " R="239" G="222" B="205"/>
+	<Color name="Antique Brass " R="205" G="149" B="117"/>
+	<Color name="Apricot " R="253" G="217" B="181"/>
+	<Color name="Aquamarine " R="120" G="219" B="226"/>
+	<Color name="Asparagus " R="135" G="169" B="107"/>
+	<Color name="Atomic Tangerine " R="255" G="164" B="116"/>
+	<Color name="Banana Mania " R="250" G="231" B="181"/>
+	<Color name="Beaver " R="159" G="129" B="112"/>
+	<Color name="Bittersweet " R="253" G="124" B="110"/>
+	<Color name="Black " R="0" G="0" B="0"/>
+	<Color name="Blizzard Blue " R="172" G="229" B="238"/>
+	<Color name="Blue " R="31" G="117" B="254"/>
+	<Color name="Blue Bell " R="162" G="162" B="208"/>
+	<Color name="Blue Gray " R="102" G="153" B="204"/>
+	<Color name="Blue Green " R="13" G="152" B="186"/>
+	<Color name="Blue Violet " R="115" G="102" B="189"/>
+	<Color name="Blush " R="222" G="93" B="131"/>
+	<Color name="Brick Red " R="203" G="65" B="84"/>
+	<Color name="Brown " R="180" G="103" B="77"/>
+	<Color name="Burnt Orange " R="255" G="127" B="73"/>
+	<Color name="Burnt Sienna " R="234" G="126" B="93"/>
+	<Color name="Cadet Blue " R="176" G="183" B="198"/>
+	<Color name="Canary " R="255" G="255" B="153"/>
+	<Color name="Caribbean Green " R="28" G="211" B="162"/>
+	<Color name="Carnation Pink " R="255" G="170" B="204"/>
+	<Color name="Cerise " R="221" G="68" B="146"/>
+	<Color name="Cerulean " R="29" G="172" B="214"/>
+	<Color name="Chestnut " R="188" G="93" B="88"/>
+	<Color name="Copper " R="221" G="148" B="117"/>
+	<Color name="Cornflower " R="154" G="206" B="235"/>
+	<Color name="Cotton Candy " R="255" G="188" B="217"/>
+	<Color name="Dandelion " R="253" G="219" B="109"/>
+	<Color name="Denim " R="43" G="108" B="196"/>
+	<Color name="Desert Sand " R="239" G="205" B="184"/>
+	<Color name="Eggplant " R="110" G="81" B="96"/>
+	<Color name="Electric Lime " R="206" G="255" B="29"/>
+	<Color name="Fern " R="113" G="188" B="120"/>
+	<Color name="Forest Green " R="109" G="174" B="129"/>
+	<Color name="Fuchsia " R="195" G="100" B="197"/>
+	<Color name="Fuzzy Wuzzy " R="204" G="102" B="102"/>
+	<Color name="Gold " R="231" G="198" B="151"/>
+	<Color name="Goldenrod " R="252" G="217" B="117"/>
+	<Color name="Granny Smith Apple " R="168" G="228" B="160"/>
+	<Color name="Gray " R="149" G="145" B="140"/>
+	<Color name="Green " R="28" G="172" B="120"/>
+	<Color name="Green Blue " R="17" G="100" B="180"/>
+	<Color name="Green Yellow " R="240" G="232" B="145"/>
+	<Color name="Hot Magenta " R="255" G="29" B="206"/>
+	<Color name="Inchworm " R="178" G="236" B="93"/>
+	<Color name="Indigo " R="93" G="118" B="203"/>
+	<Color name="Jazzberry Jam " R="202" G="55" B="103"/>
+	<Color name="Jungle Green " R="59" G="176" B="143"/>
+	<Color name="Laser Lemon " R="254" G="254" B="34"/>
+	<Color name="Lavender " R="252" G="180" B="213"/>
+	<Color name="Lemon Yellow " R="255" G="244" B="79"/>
+	<Color name="Macaroni and Cheese " R="255" G="189" B="136"/>
+	<Color name="Magenta " R="246" G="100" B="175"/>
+	<Color name="Magic Mint " R="170" G="240" B="209"/>
+	<Color name="Mahogany " R="205" G="74" B="76"/>
+	<Color name="Maize " R="237" G="209" B="156"/>
+	<Color name="Manatee " R="151" G="154" B="170"/>
+	<Color name="Mango Tango " R="255" G="130" B="67"/>
+	<Color name="Maroon " R="200" G="56" B="90"/>
+	<Color name="Mauvelous " R="239" G="152" B="170"/>
+	<Color name="Melon " R="253" G="188" B="180"/>
+	<Color name="Midnight Blue " R="26" G="72" B="118"/>
+	<Color name="Mountain Meadow " R="48" G="186" B="143"/>
+	<Color name="Mulberry " R="197" G="75" B="140"/>
+	<Color name="Navy Blue " R="25" G="116" B="210"/>
+	<Color name="Neon Carrot " R="255" G="163" B="67"/>
+	<Color name="Olive Green " R="186" G="184" B="108"/>
+	<Color name="Orange " R="255" G="117" B="56"/>
+	<Color name="Orange Red " R="255" G="43" B="43"/>
+	<Color name="Orange Yellow " R="248" G="213" B="104"/>
+	<Color name="Orchid " R="230" G="168" B="215"/>
+	<Color name="Outer Space " R="65" G="74" B="76"/>
+	<Color name="Outrageous Orange " R="255" G="110" B="74"/>
+	<Color name="Pacific Blue " R="28" G="169" B="201"/>
+	<Color name="Peach " R="255" G="207" B="171"/>
+	<Color name="Periwinkle " R="197" G="208" B="230"/>
+	<Color name="Piggy Pink " R="253" G="221" B="230"/>
+	<Color name="Pine Green " R="21" G="128" B="120"/>
+	<Color name="Pink Flamingo " R="252" G="116" B="253"/>
+	<Color name="Pink Sherbet " R="247" G="143" B="167"/>
+	<Color name="Plum " R="142" G="69" B="133"/>
+	<Color name="Purple Heart " R="116" G="66" B="200"/>
+	<Color name="Purple Mountain's Majesty " R="157" G="129" B="186"/>
+	<Color name="Purple Pizzazz " R="254" G="78" B="218"/>
+	<Color name="Radical Red " R="255" G="73" B="108"/>
+	<Color name="Raw Sienna " R="214" G="138" B="89"/>
+	<Color name="Raw Umber " R="113" G="75" B="35"/>
+	<Color name="Razzle Dazzle Rose " R="255" G="72" B="208"/>
+	<Color name="Razzmatazz " R="227" G="37" B="107"/>
+	<Color name="Red " R="238" G="32" B="77"/>
+	<Color name="Red Orange " R="255" G="83" B="73"/>
+	<Color name="Red Violet " R="192" G="68" B="143"/>
+	<Color name="Robin's Egg Blue " R="31" G="206" B="203"/>
+	<Color name="Royal Purple " R="120" G="81" B="169"/>
+	<Color name="Salmon " R="255" G="155" B="170"/>
+	<Color name="Scarlet " R="252" G="40" B="71"/>
+	<Color name="Screamin' Green " R="118" G="255" B="122"/>
+	<Color name="Sea Green " R="159" G="226" B="191"/>
+	<Color name="Sepia " R="165" G="105" B="79"/>
+	<Color name="Shadow " R="138" G="121" B="93"/>
+	<Color name="Shamrock " R="69" G="206" B="162"/>
+	<Color name="Shocking Pink " R="251" G="126" B="253"/>
+	<Color name="Silver " R="205" G="197" B="194"/>
+	<Color name="Sky Blue " R="128" G="218" B="235"/>
+	<Color name="Spring Green " R="236" G="234" B="190"/>
+	<Color name="Sunglow " R="255" G="207" B="72"/>
+	<Color name="Sunset Orange " R="253" G="94" B="83"/>
+	<Color name="Tan " R="250" G="167" B="108"/>
+	<Color name="Teal Blue " R="24" G="167" B="181"/>
+	<Color name="Thistle " R="235" G="199" B="223"/>
+	<Color name="Tickle Me Pink " R="252" G="137" B="172"/>
+	<Color name="Timberwolf " R="219" G="215" B="210"/>
+	<Color name="Tropical Rain Forest " R="23" G="128" B="109"/>
+	<Color name="Tumbleweed " R="222" G="170" B="136"/>
+	<Color name="Turquoise Blue " R="119" G="221" B="231"/>
+	<Color name="Unmellow Yellow " R="255" G="255" B="102"/>
+	<Color name="Violet (Purple) " R="146" G="110" B="174"/>
+	<Color name="Violet Blue " R="50" G="74" B="178"/>
+	<Color name="Violet Red " R="247" G="83" B="148"/>
+	<Color name="Vivid Tangerine " R="255" G="160" B="137"/>
+	<Color name="Vivid Violet " R="143" G="80" B="157"/>
+	<Color name="White " R="255" G="255" B="255"/>
+	<Color name="Wild Blue Yonder " R="162" G="173" B="208"/>
+	<Color name="Wild Strawberry " R="255" G="67" B="164"/>
+	<Color name="Wild Watermelon " R="252" G="108" B="133"/>
+	<Color name="Wisteria " R="205" G="164" B="222"/>
+	<Color name="Yellow " R="252" G="232" B="131"/>
+	<Color name="Yellow Green " R="197" G="227" B="132"/>
+	<Color name="Yellow Orange " R="255" G="174" B="66"/>
+	<Color name="Alloy Orange " R="196" G="98" B="16"/>
+	<Color name="B'dazzled Blue " R="46" G="88" B="148"/>
+	<Color name="Big Dip O' Ruby " R="156" G="37" B="66"/>
+	<Color name="Bittersweet Shimmer " R="191" G="79" B="81"/>
+	<Color name="Blast Off Bronze " R="165" G="113" B="100"/>
+	<Color name="Cyber Grape " R="88" G="66" B="124"/>
+	<Color name="Deep Space Sparkle " R="74" G="100" B="108"/>
+	<Color name="Gold Fusion " R="133" G="117" B="78"/>
+	<Color name="Illuminating Emerald " R="49" G="145" B="119"/>
+	<Color name="Metallic Seaweed " R="10" G="126" B="140"/>
+	<Color name="Metallic Sunburst " R="156" G="124" B="56"/>
+	<Color name="Razzmic Berry " R="141" G="78" B="133"/>
+	<Color name="Sheen Green " R="143" G="212" B="0"/>
+	<Color name="Shimmering Blush " R="217" G="134" B="149"/>
+	<Color name="Sonic Silver " R="117" G="117" B="117"/>
+	<Color name="Steel Blue " R="0" G="129" B="171"/>
+</ColorNames>

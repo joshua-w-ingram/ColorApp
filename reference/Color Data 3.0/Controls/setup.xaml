@@ -1,0 +1,198 @@
+﻿<UserControl x:Class="Color_Data_3._0.Controls.setup"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    Height="800" Width="480">
+
+	<Grid x:Name="LayoutRoot" Background="Black">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="VisualStateGroup">
+				<VisualState x:Name="Start"/>
+				<VisualState x:Name="FirstTimer">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_start">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_Veteran">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_firstTimer">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="Veteran">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_start">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_firstTimer">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_Veteran">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="VeteranDone">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_VeteranDone">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_start">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_firstTimer">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_Veteran">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Grid x:Name="g_start" Margin="0">
+			<Canvas x:Name="cd_case_design" Height="196" VerticalAlignment="Bottom" Margin="235,0,30,81">
+				<Path Data="F1M289.5781,507.8125L288.2761,508.4035L234.4681,555.0005L272.0151,626.6985L273.3151,626.1085L313.7611,575.1655z" Fill="White" Height="639.966" Canvas.Left="-206.854" Stretch="Fill" Canvas.Top="-477.198" Width="426.836" UseLayoutRounding="False"/>
+				<Path Data="M213.46899,0 L230.56799,4.8322902 L230.56799,376.64688 L0,281.27902 L0,274.27557 L4.1179261,275.99292 L4.1179261,275.98209 L0,274.27557 z" Fill="White" Height="376.647" Canvas.Left="15.432" Stretch="Fill" Canvas.Top="-99.864" UseLayoutRounding="False" Width="230.568"/>
+				<Image Source="/Images/cd_Images/Image.png" Stretch="Fill" Height="619" Canvas.Left="72" Canvas.Top="-123" Width="813">
+					<Image.Clip>
+						<RectangleGeometry Rect="-370.281,-501.597,600,1191.67"/>
+					</Image.Clip>
+					<Image.RenderTransform>
+						<CompositeTransform ScaleY="0.48" ScaleX="0.48" TranslateX="63.735" TranslateY="80.7666"/>
+					</Image.RenderTransform>
+				</Image>
+			</Canvas>
+			<TextBlock TextWrapping="Wrap" Text="Let's get you setup!" VerticalAlignment="Top" FontSize="48" HorizontalAlignment="Left" Width="240" d:LayoutOverrides="HorizontalAlignment" Margin="12,2,0,0"/>
+			<TextBlock Margin="138,215,0,0" TextWrapping="Wrap" Text="Is this your first time using Color Data?" VerticalAlignment="Top" Foreground="Black" HorizontalAlignment="Left" FontWeight="Bold" Width="205"/>
+			<TextBlock Margin="138,357,0,390" TextWrapping="Wrap" HorizontalAlignment="Left" FontWeight="Bold" Width="262" d:LayoutOverrides="Height"><Run Foreground="Black" Text="Or, do you have an account code already?"/></TextBlock>
+			<Button x:Name="b_firstTime" Content="First Time" VerticalAlignment="Top" Margin="158,272,82,0" BorderBrush="Black" Foreground="Black" Width="240"/>
+			<Button x:Name="b_Veteran" Content="Have A Code" Margin="158,0,82,318" BorderBrush="Black" Foreground="Black" Width="240" VerticalAlignment="Bottom"/>
+			<TextBlock HorizontalAlignment="Left" Margin="12,0,0,190" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="199" FontWeight="Bold">
+				<Span>Are you</Span><LineBreak/>
+				<Span>wondering</Span><LineBreak/>
+				<Span>why you</Span><LineBreak/>
+				<Span>need a code</Span><LineBreak/>
+				<Span>just to look at</Span><LineBreak/>
+				<Span>some colors?</Span>
+			</TextBlock>
+			<TextBlock HorizontalAlignment="Left" Margin="15,0,0,11" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="199" Text="Color Data gives you more than just color values. You get access to all of your color information online with your code. "/>
+
+		</Grid>
+		<Grid x:Name="g_firstTimer" Margin="0" Visibility="Collapsed">
+			<Canvas x:Name="cd_case_design1" Height="196" VerticalAlignment="Bottom" Margin="235,0,30,81">
+				<Path Data="F1M289.5781,507.8125L288.2761,508.4035L234.4681,555.0005L272.0151,626.6985L273.3151,626.1085L313.7611,575.1655z" Fill="White" Height="639.966" Canvas.Left="-206.854" Stretch="Fill" Canvas.Top="-477.198" Width="426.836" UseLayoutRounding="False"/>
+				<Path Data="M213.46899,0 L230.56799,4.8322902 L230.56799,376.64688 L0,281.27902 L0,274.27557 L4.1179261,275.99292 L4.1179261,275.98209 L0,274.27557 z" Fill="White" Height="376.647" Canvas.Left="15.432" Stretch="Fill" Canvas.Top="-99.864" UseLayoutRounding="False" Width="230.568"/>
+				<Image Source="/Images/cd_Images/Image.png" Stretch="Fill" Height="619" Canvas.Left="72" Canvas.Top="-123" Width="813">
+					<Image.Clip>
+						<RectangleGeometry Rect="-370.281,-501.597,600,1191.67"/>
+					</Image.Clip>
+					<Image.RenderTransform>
+						<CompositeTransform ScaleY="0.48" ScaleX="0.48" TranslateX="63.735" TranslateY="80.7666"/>
+					</Image.RenderTransform>
+				</Image>
+			</Canvas>
+			<TextBlock TextWrapping="Wrap" Text="That's it." VerticalAlignment="Top" FontSize="48" HorizontalAlignment="Left" Width="240" d:LayoutOverrides="HorizontalAlignment" Margin="12,2,0,0"/>
+			<TextBlock Margin="164,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" HorizontalAlignment="Left" FontWeight="Bold" Width="211" Text="After you add colors and sets. They will be automatically synced online"/>
+			<TextBlock x:Name="tb_code" Margin="137,311,0,399" TextWrapping="Wrap" Text="S3K9S8" Foreground="Black" HorizontalAlignment="Left" FontWeight="Bold" Width="225" FontSize="64"/>
+			<TextBlock Height="127" Margin="44,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="189" FontSize="32" Text="Here's your code! "/>
+			<Button x:Name="b_emailCode" Content="Email Code" VerticalAlignment="Bottom" Margin="164,0,129,261" BorderBrush="Black" Foreground="Black"/>
+			<TextBlock Margin="140,0,0,331.207" TextWrapping="Wrap" VerticalAlignment="Bottom" Foreground="Black" HorizontalAlignment="Left" FontWeight="Bold" Width="211" Text="Email yourself the code for easy access"/>
+			<Button x:Name="b_exit1" Content="Done" VerticalAlignment="Bottom" Margin="12,0,0,12" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="200">
+				<Button.RenderTransform>
+					<CompositeTransform/>
+				</Button.RenderTransform>
+			</Button>
+
+		</Grid>
+		<Grid x:Name="g_Veteran" Margin="0" Visibility="Collapsed">
+			<Canvas x:Name="cd_case_design2" Height="196" VerticalAlignment="Bottom" Margin="235,0,30,81">
+				<Path Data="F1M289.5781,507.8125L288.2761,508.4035L234.4681,555.0005L272.0151,626.6985L273.3151,626.1085L313.7611,575.1655z" Fill="White" Height="639.966" Canvas.Left="-206.854" Stretch="Fill" Canvas.Top="-477.198" Width="426.836" UseLayoutRounding="False"/>
+				<Path Data="M213.46899,0 L230.56799,4.8322902 L230.56799,376.64688 L0,281.27902 L0,274.27557 L4.1179261,275.99292 L4.1179261,275.98209 L0,274.27557 z" Fill="White" Height="376.647" Canvas.Left="15.432" Stretch="Fill" Canvas.Top="-99.864" UseLayoutRounding="False" Width="230.568"/>
+				<Image Source="/Images/cd_Images/Image.png" Stretch="Fill" Height="619" Canvas.Left="72" Canvas.Top="-123" Width="813">
+					<Image.Clip>
+						<RectangleGeometry Rect="-370.281,-501.597,600,1191.67"/>
+					</Image.Clip>
+					<Image.RenderTransform>
+						<CompositeTransform ScaleY="0.48" ScaleX="0.48" TranslateX="63.735" TranslateY="80.7666"/>
+					</Image.RenderTransform>
+				</Image>
+			</Canvas>
+			<TextBlock TextWrapping="Wrap" Text="Welcome back!" VerticalAlignment="Top" FontSize="48" HorizontalAlignment="Left" Width="252" Margin="12,2,0,0"/>
+			<TextBlock Margin="180,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" HorizontalAlignment="Left" FontWeight="Bold" Width="211" Text="What's your code?"/>
+			<TextBox Margin="96,260,82,0" TextWrapping="Wrap" Text="WG8WGW" VerticalAlignment="Top" FontSize="48" Background="#FD000000" BorderBrush="Black" Foreground="White" SelectionForeground="Black" FontWeight="Bold" InputScope="Number"/>
+			<Button Content="Download Data" Margin="152,379,102,349" d:LayoutOverrides="Height" BorderBrush="Black" Foreground="Black"/>
+
+		</Grid>
+		<Grid x:Name="g_VeteranDone" Margin="0" Visibility="Collapsed">
+			<Canvas x:Name="cd_case_design3" Height="196" VerticalAlignment="Bottom" Margin="235,0,30,81">
+				<Path Data="F1M289.5781,507.8125L288.2761,508.4035L234.4681,555.0005L272.0151,626.6985L273.3151,626.1085L313.7611,575.1655z" Fill="White" Height="639.966" Canvas.Left="-206.854" Stretch="Fill" Canvas.Top="-477.198" Width="426.836" UseLayoutRounding="False"/>
+				<Path Data="M213.46899,0 L230.56799,4.8322902 L230.56799,376.64688 L0,281.27902 L0,274.27557 L4.1179261,275.99292 L4.1179261,275.98209 L0,274.27557 z" Fill="White" Height="376.647" Canvas.Left="15.432" Stretch="Fill" Canvas.Top="-99.864" UseLayoutRounding="False" Width="230.568"/>
+				<Image Source="/Images/cd_Images/Image.png" Stretch="Fill" Height="619" Canvas.Left="72" Canvas.Top="-123" Width="813">
+					<Image.Clip>
+						<RectangleGeometry Rect="-370.281,-501.597,600,1191.67"/>
+					</Image.Clip>
+					<Image.RenderTransform>
+						<CompositeTransform ScaleY="0.48" ScaleX="0.48" TranslateX="63.735" TranslateY="80.7666"/>
+					</Image.RenderTransform>
+				</Image>
+			</Canvas>
+			<TextBlock TextWrapping="Wrap" Text="You're all set!" VerticalAlignment="Top" FontSize="48" HorizontalAlignment="Left" Width="252" Margin="12,2,0,0"/>
+			<TextBlock Margin="105,269,0,344" TextWrapping="Wrap" Foreground="Black" HorizontalAlignment="Left" FontWeight="Bold" Width="302" Text="We've done our best to sync all of your old color data. And because we've improved so many things you may think it looks a little different. We hope so and we think you'll like it." d:LayoutOverrides="Height"/>
+			<Button x:Name="b_exit2" Content="Done" VerticalAlignment="Bottom" Margin="12,0,0,12" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="200">
+				<Button.RenderTransform>
+					<CompositeTransform/>
+				</Button.RenderTransform>
+			</Button>
+
+		</Grid>
+
+	</Grid>
+</UserControl>

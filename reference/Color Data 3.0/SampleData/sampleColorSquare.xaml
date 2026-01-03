@@ -1,0 +1,9 @@
+﻿<local:colorSquareModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Color_Data_3._0.SampleData"
+	Desc="Filler Text With a little extra"
+	Position="1"
+	PositionVisible="Visible"
+   Fill="Aqua">
+</local:colorSquareModel>

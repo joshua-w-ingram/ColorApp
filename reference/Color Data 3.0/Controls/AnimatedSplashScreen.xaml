@@ -1,0 +1,149 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mec="clr-namespace:Microsoft.Expression.Controls;assembly=Microsoft.Expression.Controls" x:Class="Color_Data_3._0.Controls.AnimatedSplashScreen"
+    mc:Ignorable="d"
+    d:DesignHeight="800" d:DesignWidth="480">
+	<UserControl.Resources>
+		<Storyboard x:Name="Cd_Animation">
+			<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" Storyboard.TargetName="path">
+				<EasingPointKeyFrame KeyTime="0:0:0.5" Value="55.2317927079468,10.8242637961974"/>
+				<EasingPointKeyFrame KeyTime="0:0:0.8" Value="90.7529907967961,1.85760952774787"/>
+				<EasingPointKeyFrame KeyTime="0:0:1" Value="131.984985351563,18.1669921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.2" Value="157.901652018229,52.3336588541667"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.4" Value="153.380943324134,101.288609982505"/>
+				<EasingPointKeyFrame KeyTime="0:0:2" Value="130.734985351562,84.2499999999999"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" Storyboard.TargetName="path">
+				<EasingPointKeyFrame KeyTime="0:0:0.5" Value="53.8333333358169,11.5003252029419"/>
+				<EasingPointKeyFrame KeyTime="0:0:0.8" Value="86.9016520182291,0.333658854166656"/>
+				<EasingPointKeyFrame KeyTime="0:0:1" Value="131.734985351563,18.9169921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.2" Value="158.234985351563,51.6669921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.4" Value="153.443318684896,102.666992187501"/>
+				<EasingPointKeyFrame KeyTime="0:0:2" Value="130.734985351563,84.2500000000002"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" Storyboard.TargetName="path">
+				<EasingPointKeyFrame KeyTime="0:0:0.5" Value="2.48352696741172E-09,58.0003255208331"/>
+				<EasingPointKeyFrame KeyTime="0:0:0.8" Value="44.2349853515625,48.1669921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1" Value="95.2349853515625,74.1669921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.2" Value="123.234985351563,112.000325520833"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.4" Value="123.234985351562,167.000325520833"/>
+				<EasingPointKeyFrame KeyTime="0:0:2" Value="131.151652018229,158.166666666666"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[4].(LineSegment.Point)" Storyboard.TargetName="path">
+				<EasingPointKeyFrame KeyTime="0:0:0.5" Value="79.4148104386597,78.1772348731627"/>
+				<EasingPointKeyFrame KeyTime="0:0:0.8" Value="80.4776688363469,80.0232433651299"/>
+				<EasingPointKeyFrame KeyTime="0:0:1" Value="80.5683186848963,80.7503255208333"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.2" Value="80.7974853515625,80.2294921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.4" Value="81.1099853515625,80.8857421875"/>
+				<EasingPointKeyFrame KeyTime="0:0:2" Value="57.0683186848961,84.2499999999995"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" Storyboard.TargetName="path">
+				<EasingPointKeyFrame KeyTime="0:0:0.5" Value="37.6663411458336,129.708658854168"/>
+				<EasingPointKeyFrame KeyTime="0:0:0.8" Value="39.261453163284,130.995348548453"/>
+				<EasingPointKeyFrame KeyTime="0:0:1" Value="40.4016520182291,132.1669921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.2" Value="41.0474853515625,132.7294921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.4" Value="41.4224853515625,133.1669921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:2" Value="57.3183186848958,157.999999999999"/>
+			</PointAnimationUsingKeyFrames>
+			<PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(LineSegment.Point)" Storyboard.TargetName="path">
+				<EasingPointKeyFrame KeyTime="0:0:0.5" Value="38.9996744791668,129.000325520833"/>
+				<EasingPointKeyFrame KeyTime="0:0:0.8" Value="40.5614409562528,130.40538272814"/>
+				<EasingPointKeyFrame KeyTime="0:0:1" Value="41.2138754783427,130.957356275073"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.2" Value="41.4224853515625,131.2294921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:1.4" Value="41.4224853515625,131.7294921875"/>
+				<EasingPointKeyFrame KeyTime="0:0:2" Value="57.3183186848957,158.166666666666"/>
+			</PointAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="path1">
+				<DiscreteObjectKeyFrame KeyTime="0:0:1.4">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image">
+				<DiscreteObjectKeyFrame KeyTime="0:0:1.4">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image1">
+				<EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="path">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock">
+				<EasingDoubleKeyFrame KeyTime="0:0:1.7" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="textBlock1">
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="textBlock">
+				<EasingColorKeyFrame KeyTime="0:0:2" Value="White"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.4" Value="#FF767676"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="textBlock1">
+				<EasingColorKeyFrame KeyTime="0:0:2" Value="White"/>
+				<EasingColorKeyFrame KeyTime="0:0:2.7" Value="White"/>
+				<EasingColorKeyFrame KeyTime="0:0:3" Value="#FFACA333"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+    
+	<UserControl.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</UserControl.FontFamily>
+	<UserControl.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</UserControl.FontSize>
+	<UserControl.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</UserControl.Foreground>
+    
+    <Grid x:Name="LayoutRoot">
+    	<Canvas x:Name="cd" HorizontalAlignment="Left" Height="800" UseLayoutRounding="False" VerticalAlignment="Top" Width="480" Background="Black" RenderTransformOrigin="0.5,0.5" Margin="0">
+    		<Canvas.RenderTransform>
+    			<CompositeTransform/>
+    		</Canvas.RenderTransform>
+    		<Canvas x:Name="cd_case_design" Height="195.767" Canvas.Left="234.765" Canvas.Top="508.146" Width="214.735">
+    			<Path x:Name="path1" Data="F1M362.8486,600.2178L323.1926,651.1698L323.9576,651.4868L323.9576,651.4888L323.1926,651.1698L323.1926,652.4708L404.9026,686.2678L435.2176,621.9708L435.2176,620.6698z" Fill="White" Height="86.05" Canvas.Left="41.428" Stretch="Fill" Canvas.Top="70.072" Width="112.025"/>
+    			<Image x:Name="image" Source="/Images/cd_Images/Image.png" Stretch="Fill">
+    				<Image.RenderTransform>
+    					<MatrixTransform Matrix="0.479999959468842,0,0,0.479999959468842,63.7349853515625,80.7666015625"/>
+    				</Image.RenderTransform>
+    			</Image>
+    			<Path x:Name="path" Fill="White" Height="167" Canvas.Left="-0.098" Canvas.Top="-10.813" Width="158.333" RenderTransformOrigin="1,0.57">
+    				<Path.Data>
+    					<PathGeometry FillRule="Nonzero">
+    						<PathFigure IsFilled="True" IsClosed="True" StartPoint="55.2083168029785,10.8126630783081">
+    							<LineSegment Point="53.9063148498535,11.4036664962769"/>
+    							<LineSegment Point="0.0983327254652977,58.000659942627"/>
+    							<LineSegment Point="37.6453285217285,129.698669433594"/>
+    							<LineSegment Point="38.9453163146973,129.108703613281"/>
+    							<LineSegment Point="79.3913345336914,78.1656341552734"/>
+    						</PathFigure>
+    					</PathGeometry>
+    				</Path.Data>
+    				<Path.RenderTransform>
+    					<CompositeTransform/>
+    				</Path.RenderTransform>
+    			</Path>
+    			<Image x:Name="image1" Height="75" Canvas.Left="56.568" Source="/Images/cd_Images/case.png" Stretch="Fill" Canvas.Top="72.854" Width="75" Opacity="0" RenderTransformOrigin="0.5,0.5">
+    				<Image.RenderTransform>
+    					<CompositeTransform/>
+    				</Image.RenderTransform>
+    			</Image>
+    			<TextBlock x:Name="textBlock" Height="28" Canvas.Left="56.664" TextWrapping="Wrap" Canvas.Top="151.854" Width="23.333" FontFamily="Segoe UI Light" Opacity="0"><Run Text="by"/><LineBreak/><Run/></TextBlock>
+    			<TextBlock x:Name="textBlock1" Height="28" Canvas.Left="83.997" TextWrapping="Wrap" Text="InProcessOut" Canvas.Top="151.854" Width="158" FontFamily="Segoe UI Light" Opacity="0"/>
+    		</Canvas>
+    	</Canvas>
+    </Grid>
+</UserControl>

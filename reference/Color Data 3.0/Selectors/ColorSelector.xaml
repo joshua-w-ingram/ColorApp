@@ -1,0 +1,160 @@
+﻿<UserControl 
+    x:Class="Color_Data_3._0.Selectors.ColorSelector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:my="clr-namespace:Color_Data_3._0.Controls"
+    mc:Ignorable="d" Height="800" Width="480"
+    shell:SystemTray.IsVisible="False">
+
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0" Background="#FF7E7E7E">
+			<Grid x:Name="g_RGB" Grid.Row="1" Opacity="1" IsHitTestVisible="True" >
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Grid >
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+					<Grid Grid.Column="0">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="200"/>
+							<RowDefinition x:Name="ps_rgb_R1" Height="425"/>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<Rectangle x:Name="r1" Fill="Black" Margin="0,-15" Grid.Row="1" Width="76" RadiusX="5" RadiusY="5"/>
+						<Path Data="M0,0 L76,0 L76,6.9999995 L11.999998,6.9999995 C9.2385759,7 6.9999995,9.2385759 6.9999995,11.999998 L6.9999995,455 L0,455 z" Fill="#3F7E7E7E" Margin="42,-15" Grid.Row="1" Stretch="Fill" UseLayoutRounding="False"/>
+						<Border Grid.Column="0" HorizontalAlignment="Center" Grid.Row="2"  VerticalAlignment="Top" Padding="10" CornerRadius="5" Background="#3F000000" Width="76" Margin="0,30,0,0" >
+							<TextBlock x:Name="tb_rgb_R_name" Text="red" Height="26.6033325195312" TextAlignment="Center" Style="{StaticResource PhoneTextNormalStyle}" Margin="0"/>
+						</Border>
+						<Border Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="0"  VerticalAlignment="Bottom" Width="76" CornerRadius="5" Padding="10" RenderTransformOrigin="0.5,0.5" Background="#3F000000" Margin="0,0,0,30"  >
+							<TextBlock x:Name="tb_rgb_R_value"  Text="126"  Style="{StaticResource PhoneTextNormalStyle}"  Margin="0" TextAlignment="Center"  />
+						</Border>
+						<my:pSlider x:Name="ps_rgb_R" Grid.Row="1" Width="150" HorizontalAlignment="Center"  Value="126" Maximum="255" ValueChanged="ps_rgb_R_ValueChanged" Foreground="#FF7E7E7E">
+							<my:pSlider.Background>
+								<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+									<GradientStop Color="#FF007E7E" Offset="1"/>
+									<GradientStop Color="#FFFF7E7E"/>
+								</LinearGradientBrush>
+							</my:pSlider.Background>
+						</my:pSlider>
+					</Grid>
+					<Grid Grid.Column="1">
+						<Grid.RowDefinitions>
+							<RowDefinition x:Name="p" Height="200"/>
+							<RowDefinition Height="425"/>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<Rectangle x:Name="r2" Fill="Black" Margin="0,-15" Grid.Row="1" Width="76" RadiusX="5" RadiusY="5"/>
+						<Path Data="M0,0 L76,0 L76,6.9999995 L11.999998,6.9999995 C9.2385759,7 6.9999995,9.2385759 6.9999995,11.999998 L6.9999995,455 L0,455 z" Fill="#3F7E7E7E" Margin="42,-15" Grid.Row="1" Stretch="Fill" UseLayoutRounding="False"/>
+						<Border Grid.Column="0" HorizontalAlignment="Center" Grid.Row="2"  VerticalAlignment="Top" CornerRadius="5" Padding="10" Background="#3F000000" Width="76" Margin="0,30,0,0" >
+							<TextBlock x:Name="tb_rgb_G_name" Text="green" TextAlignment="Center" Style="{StaticResource PhoneTextNormalStyle}" Margin="0"/>
+						</Border>
+						<Border Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="0"  VerticalAlignment="Bottom" Width="76" CornerRadius="5" Padding="10" RenderTransformOrigin="0.5,0.5" Background="#3F000000" Margin="0,0,0,30"  >
+							<TextBlock x:Name="tb_rgb_G_value"  Text="126"  Style="{StaticResource PhoneTextNormalStyle}"  Margin="0" TextAlignment="Center"  />
+						</Border>
+						<my:pSlider x:Name="ps_rgb_G" Grid.Row="1" Width="150" HorizontalAlignment="Center" Value="126" Maximum="255" ValueChanged="ps_rgb_G_ValueChanged" Foreground="#FF7E7E7E" >
+							<my:pSlider.Background>
+								<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+									<GradientStop Color="#FF7E007E" Offset="1"/>
+									<GradientStop Color="#FF7EFF7E"/>
+								</LinearGradientBrush>
+							</my:pSlider.Background>
+						</my:pSlider>
+					</Grid>
+					<Grid Grid.Column="2">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="200"/>
+							<RowDefinition Height="425"/>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<Rectangle x:Name="r3" Fill="Black" Margin="0,-15" Grid.Row="1" Width="76" RadiusX="5" RadiusY="5"/>
+						<Path Data="M0,0 L76,0 L76,6.9999995 L11.999998,6.9999995 C9.2385759,7 6.9999995,9.2385759 6.9999995,11.999998 L6.9999995,455 L0,455 z" Fill="#3F7E7E7E" Margin="42,-15" Grid.Row="1" Stretch="Fill" UseLayoutRounding="False"/>
+						<Border Grid.Column="0" HorizontalAlignment="Center" Grid.Row="2"  VerticalAlignment="Top" CornerRadius="5" Padding="10" Background="#3F000000" Width="76" Margin="0,30,0,0" >
+							<TextBlock x:Name="tb_rgb_B_name" Text="blue" TextAlignment="Center" Style="{StaticResource PhoneTextNormalStyle}" Margin="0"/>
+						</Border>
+						<Border Grid.Column="0" HorizontalAlignment="Center"  Grid.Row="0"  VerticalAlignment="Bottom" Width="76" CornerRadius="5" Padding="10" RenderTransformOrigin="0.5,0.5" Background="#3F000000" Margin="0,0,0,30"  >
+							<TextBlock x:Name="tb_rgb_B_value"  Text="126"  Style="{StaticResource PhoneTextNormalStyle}"  Margin="0" TextAlignment="Center"  />
+						</Border>
+						<my:pSlider x:Name="ps_rgb_B" Grid.Row="1" Width="150" HorizontalAlignment="Center" Value="126" Maximum="255" ValueChanged="ps_rgb_B_ValueChanged" Foreground="#FF7E7E7E" >
+							<my:pSlider.Background>
+								<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+									<GradientStop Color="#FF7E7E00" Offset="1"/>
+									<GradientStop Color="#FF7E7EFF"/>
+								</LinearGradientBrush>
+							</my:pSlider.Background>
+						</my:pSlider>
+					</Grid>
+				</Grid>
+			</Grid>
+			<Grid x:Name="g_HSL" Grid.Row="1" Opacity="0"  IsHitTestVisible="False" d:IsHidden="True" >
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				<Grid >
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+					<Grid Grid.Column="0">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="*"/>
+							<RowDefinition Height="500"/>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<TextBlock x:Name="tb_hsl_H_name" Grid.Column="0" Grid.Row="2" Height="30" HorizontalAlignment="Center"  VerticalAlignment="Center" Text="hue" />
+						<TextBlock x:Name="tb_hsl_H_value" Grid.Column="0"  Grid.Row="0" Height="30" HorizontalAlignment="Center"  VerticalAlignment="Center"  Text="180"  Style="{StaticResource PhoneTextNormalStyle}"  />
+						<my:pSlider x:Name="ps_hsl_H" Grid.Row="1" Width="150" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Value="180" Maximum="360" ValueChanged="ps_hsl_H_ValueChanged"/>
+					</Grid>
+					<Grid Grid.Column="1">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="*"/>
+							<RowDefinition Height="500"/>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<TextBlock x:Name="tb_hsl_S_name" Grid.Column="0" Grid.Row="2" Height="30" HorizontalAlignment="Center"  VerticalAlignment="Center" Text="saturation" />
+						<TextBlock x:Name="tb_hsl_S_value" Grid.Column="0"  Grid.Row="0" Height="30" HorizontalAlignment="Center"  VerticalAlignment="Center"  Text="0.5"  Style="{StaticResource PhoneTextNormalStyle}"  />
+						<my:pSlider x:Name="ps_hsl_S" Grid.Row="1" Width="150" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Value="0.5" Maximum="1" ValueChanged="ps_hsl_S_ValueChanged" />
+					</Grid>
+					<Grid Grid.Column="2">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="*"/>
+							<RowDefinition Height="500"/>
+							<RowDefinition Height="*"/>
+						</Grid.RowDefinitions>
+						<TextBlock x:Name="tb_hsl_L_name" Grid.Column="0" Grid.Row="2" Height="30" HorizontalAlignment="Center"  VerticalAlignment="Center" Text="lightness" />
+						<TextBlock x:Name="tb_hsl_L_value" Grid.Column="0"  Grid.Row="0" Height="30" HorizontalAlignment="Center"  VerticalAlignment="Center"  Text="0.5"  Style="{StaticResource PhoneTextNormalStyle}"  />
+						<my:pSlider x:Name="ps_hsl_L" Grid.Row="1" Width="150" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Value="0.5" Maximum="1" ValueChanged="ps_hsl_L_ValueChanged" />
+					</Grid>
+				</Grid>
+			</Grid>
+			<Grid Height="72" Margin="0,0,0,8" VerticalAlignment="Bottom" d:LayoutOverrides="Width">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="0.476*"/>
+					<ColumnDefinition Width="0.524*"/>
+				</Grid.ColumnDefinitions>
+				<Button Name="b_accept" Content="Accept"  d:LayoutOverrides="Height" Margin="0" Width="200" Background="#41000000" Click="b_accept_Click" Grid.Column="1"/>
+			</Grid>
+		</Grid>
+	</Grid>
+
+	<!--Sample code showing usage of ApplicationBar-->
+	<!--<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+			<shell:ApplicationBarIconButton IconUri="/Images/light/cancel.png" Text="cancel"  Click="cancel_Click"/>
+			<shell:ApplicationBarIconButton IconUri="/Images/light/check.png" Text="accept"  Click="accept_Click"/>
+			<shell:ApplicationBar.MenuItems>
+				<shell:ApplicationBarMenuItem Text="rgb mode"/>
+				<shell:ApplicationBarMenuItem Text="hsl mode"/>
+			</shell:ApplicationBar.MenuItems>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>-->
+
+</UserControl>

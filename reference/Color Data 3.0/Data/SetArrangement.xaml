@@ -1,0 +1,77 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:my="clr-namespace:Color_Data_3._0.Controls"
+    xmlns:support="clr-namespace:Color_Data_3._0.Support" 
+    xmlns:Microsoft_Advertising_Mobile_UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI" 
+    x:Class="Color_Data_3._0.Data.SetArrangement"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="728" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="False" >
+	
+	<!--Sample code showing usage of ApplicationBar-->
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar IsVisible="True" >
+			<shell:ApplicationBar.MenuItems>
+				<shell:ApplicationBarMenuItem Text="Snap to Grid" Click="abmi_Snap_Click"/>
+				<shell:ApplicationBarMenuItem Text="Show Grid" Click="abmi_Grid_Click"/>
+				<shell:ApplicationBarMenuItem Text="Auto Arrange" Click="abmi_autoArrange_Click"/>
+			</shell:ApplicationBar.MenuItems>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent" Tap="LayoutRoot_Tap">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" MinHeight="12"/>
+			<RowDefinition Height="150"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+
+		<!--TitlePanel contains the name of the application and page title-->
+		<Microsoft_Advertising_Mobile_UI:AdControl x:Name="ad1" ApplicationId="test_client" AdUnitId="Image480_80" Height="80" Margin="0" Width="480"/>
+	<!--TitlePanel contains the name of the application and page title-->
+		<StackPanel x:Name="TitlePanel" Grid.Row="1" Margin="12,3,0,28">
+			<TextBlock x:Name="ApplicationTitle" 
+					   Text="{StaticResource AppName}" 
+					   Style="{StaticResource AppTitleStyle}" />
+			<TextBlock x:Name="PageTitle" 
+					   Text="Arrange" 
+					   Margin="9,-12,0,0" 
+					   Style="{StaticResource PhoneTextTitle1Style}"/>
+		</StackPanel>
+
+		<!--ContentPanel - place additional content here-->
+		<Grid Grid.Row="2" Margin="0,0,0,0" >
+			<Grid x:Name="g_grid" Visibility="Collapsed">
+<!--<Path Data="M0,0 L0,1" HorizontalAlignment="Left" Margin="10,0,0,0" Stretch="Fill" Stroke="Gray" StrokeThickness="1" UseLayoutRounding="False"/>
+				<Path Data="M0,0 L1,0" Margin="0,550,0,0" Stretch="Fill" Stroke="Gray" StrokeThickness="1" UseLayoutRounding="False" VerticalAlignment="Top"/>-->
+			</Grid>
+			<Grid x:Name="g_ContentPanel" Margin="10,0,0,0" Background="Transparent" d:IsHidden="True">
+<!--<my:colorSquare Name="colorSquare1"
+							Width="120" Height="120"
+							Margin="112,120,0,0" 
+							HorizontalAlignment="Left" VerticalAlignment="Top" 
+							Canvas.ZIndex="{Binding Z}"/>-->
+			</Grid>
+		</Grid>
+		<my:imageButton 
+			x:Name="ib_overlay" 
+			HorizontalAlignment="Right" VerticalAlignment="Top" 
+			iconDark="/Images/dark/questionmark.png" iconLight="/Images/light/questionmark.png" 
+			Width="58" Height="58" Margin="0,-2,10,0" 
+			Tap="ib_overlay_Tap" Grid.Row="1" />
+		<Popup x:Name="p_overlay"  Closed="p_overlay_Closed" Margin="0,0,0,-72" Grid.RowSpan="3">
+			<support:overlay x:Name="o_mainPage"/>
+		</Popup>
+		<my:Waiting x:Name="w_waiting" Visibility="Collapsed" Margin="0,0,0,-72" Grid.RowSpan="3"/>
+	</Grid>
+	
+</phone:PhoneApplicationPage>

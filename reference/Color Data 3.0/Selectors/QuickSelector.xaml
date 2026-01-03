@@ -1,0 +1,180 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Color_Data_3__0_Controls="clr-namespace:Color_Data_3._0.Controls" 
+    x:Class="Color_Data_3._0.Selectors.QuickSelector"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="False">
+	<phone:PhoneApplicationPage.Resources>
+		<Storyboard x:Name="Blip">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="path">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.75">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseIn"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="path1">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.75">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseIn"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="path2">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.75">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseIn"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="path3">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.75">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseIn"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<CircleEase EasingMode="EaseOut"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</phone:PhoneApplicationPage.Resources>
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="#60FFFFFF">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="640"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+
+		<!--ContentPanel - place additional content here-->
+		<Grid x:Name="ContentPanel" Margin="0">
+			<Rectangle x:Name="videoRectangle" Margin="0">
+				<Rectangle.Fill>
+					<VideoBrush x:Name="previewBrush">
+						<VideoBrush.RelativeTransform>
+							<CompositeTransform x:Name="previewTransform" CenterX=".5" CenterY=".5" Rotation="90" />
+						</VideoBrush.RelativeTransform>
+					</VideoBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Path x:Name="path" Data="M-0.25,19.891998 L214.5,19.891998 M222.323,37.570007 C217.798,33.046017 215,26.796011 215,19.892006 C215,13.133003 217.68201,7.0000024 222.041,2.5" HorizontalAlignment="Left" Margin="-2.75,0,0,0" Stretch="Fill" Stroke="#7E000000" StrokeThickness="5" UseLayoutRounding="False" VerticalAlignment="Center" Width="227.573" Height="40.07" RenderTransformOrigin="0,0.5">
+				<Path.RenderTransform>
+					<CompositeTransform/>
+				</Path.RenderTransform>
+			</Path>
+			<Path x:Name="path2" Data="M20.177002,10.321991 L20.177002,304.82199 M37.854004,2.5 C33.330009,7.0229993 27.080008,9.8219995 20.176003,9.8219995 C13.273002,9.8219995 7.0229998,7.0239987 2.5,2.5" HorizontalAlignment="Center" Margin="0,0,0,-2.5" Stretch="Fill" Stroke="#7E000000" StrokeThickness="5" UseLayoutRounding="False" VerticalAlignment="Bottom" Height="307.322" Width="40.354" RenderTransformOrigin="0.5,1">
+				<Path.RenderTransform>
+					<CompositeTransform/>
+				</Path.RenderTransform>
+			</Path>
+			<Path x:Name="path1" Data="M10.324005,20.179993 L224.99069,20.179993 M2.5,2.5 C7.025001,7.0239983 9.8240004,13.274996 9.8240004,20.18 C9.8240004,27.082998 7.025001,33.333 2.5020065,37.856995" HorizontalAlignment="Right" Margin="0,0,-2.668,0" Stretch="Fill" Stroke="#7E000000" StrokeThickness="5" UseLayoutRounding="False" VerticalAlignment="Center" Width="227.492" Height="40.356" RenderTransformOrigin="0.95,0.5">
+				<Path.RenderTransform>
+					<CompositeTransform/>
+				</Path.RenderTransform>
+			</Path>
+			<Path x:Name="path3" Data="M20.459,-0.50001293 L20.459,294.5 M2.5,302.608 C7.0439997,297.91699 13.411002,295 20.459005,295 C27.361006,295 33.610008,297.797 38.13501,302.32001" HorizontalAlignment="Center" Margin="0,-2.997,0,0" Stretch="Fill" Stroke="#7E000000" StrokeThickness="5" UseLayoutRounding="False" VerticalAlignment="Top" Height="308.105" Width="40.634" RenderTransformOrigin="0.5,0">
+				<Path.RenderTransform>
+					<CompositeTransform/>
+				</Path.RenderTransform>
+			</Path>
+		</Grid>
+		<Grid x:Name="buttonPanel" Margin="0">
+			<Border x:Name="b_focus"
+				HorizontalAlignment="Left" VerticalAlignment="Top" 
+				Margin="12,12,12,0" CornerRadius="20" Background="#7E000000">
+				<Grid Width="80" Height="100" Margin="0">
+					<Color_Data_3__0_Controls:imageButton x:Name="ib_focus" 
+						Width="68" Height="68" Margin="6,6,6,26"
+						HorizontalAlignment="Left" VerticalAlignment="Center" 
+						iconLight="/Images/light/eye.png"
+						iconDark="/Images/dark/eye.png"
+						Tap="ib_focus_Tap" />
+					<TextBlock Margin="0,0,0,8" TextWrapping="Wrap" Text="focus" d:LayoutOverrides="Width, Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16"/>
+				</Grid>
+			</Border>
+			<Border x:Name="b_add"
+				HorizontalAlignment="Right" 
+				Margin="12" CornerRadius="20" Background="#7E000000" Width="80" Height="100" VerticalAlignment="Bottom" d:LayoutOverrides="Height">
+				<Grid Width="80" Height="100" Margin="0">
+					<Color_Data_3__0_Controls:imageButton x:Name="ib_add" 
+						Width="68" Height="68" Margin="6,6,6,26"
+						HorizontalAlignment="Left" VerticalAlignment="Center" 
+						iconLight="/Images/light/add.png"
+						iconDark="/Images/dark/add.png"
+						Tap="ib_add_Tap" />
+					<TextBlock Margin="0,0,0,8" TextWrapping="Wrap" Text="select" d:LayoutOverrides="Width, Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16"/>
+				</Grid>
+			</Border>
+
+		</Grid>
+		<Grid x:Name="g_Color" Background="Black" Grid.Row="1">
+			<Border x:Name="b_accept"
+				HorizontalAlignment="Right" 
+				Margin="0,0,12,12" CornerRadius="20" 
+				Background="#7E000000" 
+				Width="80" Height="100" 
+				VerticalAlignment="Bottom" d:LayoutOverrides="Height"
+				Visibility="Collapsed">
+				<Grid Width="80" Height="100" Margin="0">
+					<Color_Data_3__0_Controls:imageButton x:Name="ib_accept" 
+						Width="68" Height="68" Margin="6,6,6,26"
+						HorizontalAlignment="Left" VerticalAlignment="Center" 
+						iconLight="/Images/light/check.png"
+						iconDark="/Images/dark/check.png"
+						Tap="ib_accept_Tap" />
+					<TextBlock Margin="0,0,0,8" TextWrapping="Wrap" Text="accept" d:LayoutOverrides="Width, Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16"/>
+				</Grid>
+			</Border>
+			<StackPanel HorizontalAlignment="Left" Margin="8" Orientation="Vertical" d:LayoutOverrides="Height">
+				<TextBlock x:Name="tb_namedColor" Margin="0" TextWrapping="Wrap" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
+				<TextBlock x:Name="tb_r" Margin="0,18,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
+				<TextBlock x:Name="tb_g" Margin="0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
+				<TextBlock x:Name="tb_b" Margin="0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
+			</StackPanel>
+		</Grid>
+		<Canvas x:Name="crosshairs" HorizontalAlignment="Left" Height="100" UseLayoutRounding="False" VerticalAlignment="Top" Width="100">
+			<Canvas x:Name="Layer_1" Height="50" Canvas.Left="25" Canvas.Top="25" Width="50"/>
+		</Canvas>
+	</Grid>
+
+	<!--Sample code showing usage of ApplicationBar-->
+	<!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

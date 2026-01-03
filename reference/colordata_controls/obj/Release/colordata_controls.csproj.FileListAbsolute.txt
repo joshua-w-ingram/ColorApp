@@ -1,0 +1,16 @@
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\Bin\Release\colordata_controls.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\Bin\Release\colordata_controls.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\Bin\Release\Microsoft.Expression.Controls.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\Bin\Release\Microsoft.Expression.Drawing.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\Bin\Release\Microsoft.Expression.Controls.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\Bin\Release\Microsoft.Expression.Drawing.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\ResolveAssemblyReference.cache
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\AnimatedSplashScreen.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\colorButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\colorSquare.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\setRect.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\setButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\simpleColorButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\colordata_controls.g.resources
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\colordata_controls.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\obj\Release\colordata_controls.pdb

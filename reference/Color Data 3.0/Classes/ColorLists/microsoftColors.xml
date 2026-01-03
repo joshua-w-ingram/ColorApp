@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ColorNames>
+	<Color name="Alice Blue" R="240" G="248" B="255"/>
+	<Color name="Antique White" R="250" G="235" B="215"/>
+	<Color name="Aqua" R="0" G="255" B="255"/>
+	<Color name="Aquamarine" R="127" G="255" B="212"/>
+	<Color name="Azure" R="240" G="255" B="255"/>
+	<Color name="Beige" R="245" G="245" B="220"/>
+	<Color name="Bisque" R="255" G="228" B="196"/>
+	<Color name="Black" R="0" G="0" B="0"/>
+	<Color name="Blanched Almond" R="255" G="235" B="205"/>
+	<Color name="Blue" R="0" G="0" B="255"/>
+	<Color name="Blue Violet" R="138" G="43" B="226"/>
+	<Color name="Brown" R="165" G="42" B="42"/>
+	<Color name="Burly Wood" R="222" G="184" B="135"/>
+	<Color name="Cadet Blue" R="95" G="158" B="160"/>
+	<Color name="Chartreuse" R="127" G="255" B="0"/>
+	<Color name="Chocolate" R="210" G="105" B="30"/>
+	<Color name="Coral" R="255" G="127" B="80"/>
+	<Color name="Cornflower Blue" R="100" G="149" B="237"/>
+	<Color name="Cornsilk" R="255" G="248" B="220"/>
+	<Color name="Crimson" R="220" G="20" B="60"/>
+	<Color name="Cyan" R="0" G="255" B="255"/>
+	<Color name="Dark Blue" R="0" G="0" B="139"/>
+	<Color name="Dark Cyan" R="0" G="139" B="139"/>
+	<Color name="Dark Goldenrod" R="184" G="134" B="11"/>
+	<Color name="Dark Gray" R="169" G="169" B="169"/>
+	<Color name="Dark Green" R="0" G="100" B="0"/>
+	<Color name="Dark Khaki" R="189" G="183" B="107"/>
+	<Color name="Dark Magenta" R="139" G="0" B="139"/>
+	<Color name="Dark Olive Green" R="85" G="107" B="47"/>
+	<Color name="Dark Orange" R="255" G="140" B="0"/>
+	<Color name="Dark Orchid" R="153" G="50" B="204"/>
+	<Color name="Dark Red" R="139" G="0" B="0"/>
+	<Color name="Dark Salmon" R="233" G="150" B="122"/>
+	<Color name="Dark Sea Green" R="143" G="188" B="143"/>
+	<Color name="Dark Slate Blue" R="72" G="61" B="139"/>
+	<Color name="Dark Slate Gray" R="47" G="79" B="79"/>
+	<Color name="Dark Turquoise" R="0" G="206" B="209"/>
+	<Color name="Dark Violet" R="148" G="0" B="211"/>
+	<Color name="Deep Pink" R="255" G="20" B="147"/>
+	<Color name="Deep Sky Blue" R="0" G="191" B="255"/>
+	<Color name="Dim Gray" R="105" G="105" B="105"/>
+	<Color name="Dodger Blue" R="30" G="144" B="255"/>
+	<Color name="Fire Brick" R="178" G="34" B="34"/>
+	<Color name="Floral White" R="255" G="250" B="240"/>
+	<Color name="Forest Green" R="34" G="139" B="34"/>
+	<Color name="Fuchsia" R="255" G="0" B="255"/>
+	<Color name="Gainsboro" R="220" G="220" B="220"/>
+	<Color name="Ghost White" R="248" G="248" B="255"/>
+	<Color name="Gold" R="255" G="215" B="0"/>
+	<Color name="Goldenrod" R="218" G="165" B="32"/>
+	<Color name="Gray" R="128" G="128" B="128"/>
+	<Color name="Green" R="0" G="128" B="0"/>
+	<Color name="Green Yellow" R="173" G="255" B="47"/>
+	<Color name="Honeydew" R="240" G="255" B="240"/>
+	<Color name="Hot Pink" R="255" G="105" B="180"/>
+	<Color name="Indian Red" R="205" G="92" B="92"/>
+	<Color name="Indigo" R="75" G="0" B="130"/>
+	<Color name="Ivory" R="255" G="255" B="240"/>
+	<Color name="Khaki" R="240" G="230" B="140"/>
+	<Color name="Lavender" R="230" G="230" B="250"/>
+	<Color name="Lavender Blush" R="255" G="240" B="245"/>
+	<Color name="Lawn Green" R="124" G="252" B="0"/>
+	<Color name="Lemon Chiffon" R="255" G="250" B="205"/>
+	<Color name="Light Blue" R="173" G="216" B="230"/>
+	<Color name="Light Coral" R="240" G="128" B="128"/>
+	<Color name="Light Cyan" R="224" G="255" B="255"/>
+	<Color name="Light Goldenrod Yellow" R="250" G="250" B="210"/>
+	<Color name="Light Green" R="144" G="238" B="144"/>
+	<Color name="Light Gray" R="211" G="211" B="211"/>
+	<Color name="Light Pink" R="255" G="182" B="193"/>
+	<Color name="Light Salmon" R="255" G="160" B="122"/>
+	<Color name="Light Sea Green" R="32" G="178" B="170"/>
+	<Color name="Light Sky Blue" R="135" G="206" B="250"/>
+	<Color name="Light Slate Gray" R="119" G="136" B="153"/>
+	<Color name="Light Steel Blue" R="176" G="196" B="222"/>
+	<Color name="Light Yellow" R="255" G="255" B="224"/>
+	<Color name="Lime" R="0" G="255" B="0"/>
+	<Color name="Lime Green" R="50" G="205" B="50"/>
+	<Color name="Linen" R="250" G="240" B="230"/>
+	<Color name="Magenta" R="255" G="0" B="255"/>
+	<Color name="Maroon" R="128" G="0" B="0"/>
+	<Color name="Medium Aquamarine" R="102" G="205" B="170"/>
+	<Color name="Medium Blue" R="0" G="0" B="205"/>
+	<Color name="Medium Orchid" R="186" G="85" B="211"/>
+	<Color name="Medium Purple" R="147" G="112" B="219"/>
+	<Color name="Medium Sea Green" R="60" G="179" B="113"/>
+	<Color name="Medium Slate Blue" R="123" G="104" B="238"/>
+	<Color name="Medium Spring Green" R="0" G="250" B="154"/>
+	<Color name="Medium Turquoise" R="72" G="209" B="204"/>
+	<Color name="Medium Violet Red" R="199" G="21" B="133"/>
+	<Color name="Midnight Blue" R="25" G="25" B="112"/>
+	<Color name="Mint Cream" R="245" G="255" B="250"/>
+	<Color name="Misty Rose" R="255" G="228" B="225"/>
+	<Color name="Moccasin" R="255" G="228" B="181"/>
+	<Color name="Navajo White" R="255" G="222" B="173"/>
+	<Color name="Navy" R="0" G="0" B="128"/>
+	<Color name="Old Lace" R="253" G="245" B="230"/>
+	<Color name="Olive" R="128" G="128" B="0"/>
+	<Color name="Olive Drab" R="107" G="142" B="35"/>
+	<Color name="Orange" R="255" G="165" B="0"/>
+	<Color name="Orange Red" R="255" G="69" B="0"/>
+	<Color name="Orchid" R="218" G="112" B="214"/>
+	<Color name="Pale Goldenrod" R="238" G="232" B="170"/>
+	<Color name="Pale Green" R="152" G="251" B="152"/>
+	<Color name="Pale Turquoise" R="175" G="238" B="238"/>
+	<Color name="Pale Violet Red" R="219" G="112" B="147"/>
+	<Color name="Papaya Whip" R="255" G="239" B="213"/>
+	<Color name="Peach Puff" R="255" G="218" B="185"/>
+	<Color name="Peru" R="205" G="133" B="63"/>
+	<Color name="Pink" R="255" G="192" B="203"/>
+	<Color name="Plum" R="221" G="160" B="221"/>
+	<Color name="Powder Blue" R="176" G="224" B="230"/>
+	<Color name="Purple" R="128" G="0" B="128"/>
+	<Color name="Red" R="255" G="0" B="0"/>
+	<Color name="Rosy Brown" R="188" G="143" B="143"/>
+	<Color name="Royal Blue" R="65" G="105" B="225"/>
+	<Color name="Saddle Brown" R="139" G="69" B="19"/>
+	<Color name="Salmon" R="250" G="128" B="114"/>
+	<Color name="Sandy Brown" R="244" G="164" B="96"/>
+	<Color name="Sea Green" R="46" G="139" B="87"/>
+	<Color name="Seashell" R="255" G="245" B="238"/>
+	<Color name="Sienna" R="160" G="82" B="45"/>
+	<Color name="Silver" R="192" G="192" B="192"/>
+	<Color name="Sky Blue" R="135" G="206" B="235"/>
+	<Color name="Slate Blue" R="106" G="90" B="205"/>
+	<Color name="Slate Gray" R="112" G="128" B="144"/>
+	<Color name="Snow" R="255" G="250" B="250"/>
+	<Color name="Spring Green" R="0" G="255" B="127"/>
+	<Color name="Steel Blue" R="70" G="130" B="180"/>
+	<Color name="Tan" R="210" G="180" B="140"/>
+	<Color name="Teal" R="0" G="128" B="128"/>
+	<Color name="Thistle" R="216" G="191" B="216"/>
+	<Color name="Tomato" R="255" G="99" B="71"/>
+	<Color name="Turquoise" R="64" G="224" B="208"/>
+	<Color name="Violet" R="238" G="130" B="238"/>
+	<Color name="Wheat" R="245" G="222" B="179"/>
+	<Color name="White" R="255" G="255" B="255"/>
+	<Color name="White Smoke" R="245" G="245" B="245"/>
+	<Color name="Yellow" R="255" G="255" B="0"/>
+	<Color name="Yellow Green" R="154" G="205" B="50"/>
+</ColorNames>

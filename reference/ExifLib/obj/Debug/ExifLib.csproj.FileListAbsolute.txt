@@ -1,0 +1,5 @@
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\ExifLib\Bin\Debug\ExifLib.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\ExifLib\Bin\Debug\ExifLib.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\ExifLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\ExifLib\obj\Debug\ExifLib.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\ExifLib\obj\Debug\ExifLib.pdb

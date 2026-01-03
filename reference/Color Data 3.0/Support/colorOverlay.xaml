@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Color_Data_3._0.Support.colorOverlay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" 
+	xmlns:controlsPrimitives="clr-namespace:Microsoft.Phone.Controls.Primitives;assembly=Microsoft.Phone.Controls" 
+    mc:Ignorable="d"
+    Height="800" Width="480">
+
+	<Grid x:Name="LayoutRoot" Background="Black">
+
+		<controls:Pivot Margin="0" Title="pivot" Style="{StaticResource pivotOverlays}" d:IsHidden="True">
+			<controls:PivotItem Margin="0">
+				<Rectangle >
+					<Rectangle.Fill>
+						<ImageBrush Stretch="Fill" ImageSource="/Images/help/color1.png"/>
+					</Rectangle.Fill>
+				</Rectangle>
+			</controls:PivotItem>
+			<controls:PivotItem Margin="0">
+				<Rectangle Margin="0" >
+					<Rectangle.Fill>
+						<ImageBrush Stretch="Fill" ImageSource="/Images/help/color2.png"/>
+					</Rectangle.Fill>
+				</Rectangle>
+			</controls:PivotItem>
+		</controls:Pivot>
+
+	</Grid>
+</UserControl>

@@ -1,0 +1,143 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:my="clr-namespace:Color_Data_3._0.Controls" 
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    x:Class="Color_Data_3._0.Support.Settings"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480">
+
+
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<controls:Pivot Title="{StaticResource AppName}" TitleTemplate="{StaticResource PivotTitleDataTemplate}" >
+
+			<controls:PivotItem Header="General">
+				<ScrollViewer Margin="12,0">
+					<StackPanel Width="456">
+						<TextBlock Margin="0,0,18,0" Text="all settings saved on change (use back to return to main)" VerticalAlignment="Top" FontSize="16" FontStyle="Italic"/>
+						<Path Data="M0,0 L1,0" Margin="0,10,55,10" Stretch="Fill" Stroke="White" UseLayoutRounding="False" StrokeThickness="2"/>
+						<StackPanel x:Name="sp_trial2" Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Purchase Full Version"/>
+							<Button x:Name="b_purchase2" Content="Purchase Color Data 3.0" Margin="0,12,50,0" Tap="purchase_Tap" Height="75"/>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Search Bar Options"/>
+							<TextBlock TextWrapping="Wrap" Text="the search bar lets you find colors or sets quickly by name" Margin="12,0,30,0" FontSize="16" FontStyle="Italic"/>
+							<toolkit:ListPicker x:Name="lp_searchBarVisibility" Margin="20,0,100,0" SelectionChanged="lp_searchBarVisibility_SelectionChanged">
+								<toolkit:ListPickerItem x:Name="lpi_searchBarVisibility_show" Content="Always Show"/>
+								<toolkit:ListPickerItem x:Name="lpi_searchBarVisibility_hide" Content="Always Hide"/>
+								<toolkit:ListPickerItem x:Name="lpi_searchBarVisibility_auto" Content="Auto"/>
+							</toolkit:ListPicker>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Help Icon Options"/>
+							<TextBlock TextWrapping="Wrap" Text="help icons show up on pages where there are more features than you might be aware of" Margin="12,0,30,0" FontSize="16" FontStyle="Italic"/>
+							<toolkit:ListPicker x:Name="lp_helpVisibility" Margin="20,0,100,0" SelectionChanged="lp_helpVisibility_SelectionChanged">
+								<toolkit:ListPickerItem x:Name="lpi_helpVisibility_show" Content="Show Help Icons"/>
+								<toolkit:ListPickerItem x:Name="lpi_helpVisibility_hide" Content="Hide Help Icons"/>
+							</toolkit:ListPicker>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Startup Animation Options"/>
+							<TextBlock TextWrapping="Wrap" Text="the startup animation slowing you down? disable it" Margin="12,0,30,0" FontSize="16" FontStyle="Italic"/>
+							<toolkit:ListPicker x:Name="lp_splashVisibility" Margin="20,0,100,0" SelectionChanged="lp_splashVisibility_SelectionChanged">
+								<toolkit:ListPickerItem x:Name="lpi_splashVisibility_show" Content="Enable Startup Animation"/>
+								<toolkit:ListPickerItem x:Name="lpi_splashVisibility_hide" Content="Disable Startup Animation"/>
+							</toolkit:ListPicker>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Quick Color Live Tile"/>
+							<toolkit:ToggleSwitch x:Name="ts_liveTile" Header="" Margin="0,0,68,0" HorizontalAlignment="Right" Content="Live Tile Off   " Checked="ToggleSwitch_Checked" Unchecked="ToggleSwitch_Unchecked"/>
+							<TextBlock TextWrapping="Wrap" Text="Add a tile to you start screen to grab and save colors fast" FontSize="16" FontStyle="Italic" Margin="0,-24,96,0" Width="215" Height="42.5666656494141" HorizontalAlignment="Right" IsHitTestVisible="False"/>
+						</StackPanel>
+					</StackPanel>
+				</ScrollViewer>
+			</controls:PivotItem>
+			<controls:PivotItem Header="Color Settings">
+				<ScrollViewer Margin="12,0">
+					<StackPanel Width="456">
+						<TextBlock Margin="0,0,18,0" Text="all settings saved on change (use back to return to main)" VerticalAlignment="Top" FontSize="16" FontStyle="Italic"/>
+						<Path Data="M0,0 L1,0" Margin="0,10,55,10" Stretch="Fill" Stroke="White" UseLayoutRounding="False" StrokeThickness="2"/>
+						<StackPanel x:Name="sp_trial3" Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Purchase Full Version"/>
+							<Button x:Name="b_purchase3" Content="Purchase Color Data 3.0" Margin="0,12,50,0" Tap="purchase_Tap" Height="75"/>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Named Color Database"/>
+							<TextBlock TextWrapping="Wrap" Text="named color databases are lists of commonly known color names. Select to one you like best" Margin="12,0,30,0" FontSize="16" FontStyle="Italic"/>
+							<toolkit:ListPicker x:Name="lp_namedColorDatabase" Margin="20,0,100,0" SelectionChanged="lp_namedColorDatabase_SelectionChanged">
+								<toolkit:ListPickerItem x:Name="lpi_namedColors_microsoft" Content="Microsoft - 140 Colors"/>
+								<toolkit:ListPickerItem x:Name="lpi_namedColors_crayola" Content="Crayola - 149 Colors"/>
+								<toolkit:ListPickerItem x:Name="lpi_namedColors_w3c" Content="W3C - 144 Colors"/>
+								<toolkit:ListPickerItem x:Name="lpi_namedColors_wiki" Content="Wikipedia - 787 Colors"/>
+							</toolkit:ListPicker>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock Text="Name Color Recognition Distance"/>
+							<TextBlock TextWrapping="Wrap" Text="Recognition distance may sound confusing to you. If so, remember the bigger the number the bigger difference in color" Margin="12,0,30,0" FontSize="16" FontStyle="Italic"/>
+							<toolkit:ListPicker x:Name="lp_NamedColorDistance" Margin="20,0,100,0" SelectionChanged="lp_NamedColorDistance_SelectionChanged">
+								<toolkit:ListPickerItem x:Name="lpi_5p" Content="5 Points"/>
+								<toolkit:ListPickerItem x:Name="lpi_10p" Content="10 Points"/>
+								<toolkit:ListPickerItem x:Name="lpi_30p" Content="30 Points"/>
+								<toolkit:ListPickerItem x:Name="lpi_50p" Content="50 Points"/>
+								<toolkit:ListPickerItem x:Name="lpi_all" Content="Nearest Named Color"/>
+							</toolkit:ListPicker>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock Text="Auto Name Options"/>
+							<TextBlock TextWrapping="Wrap" Text="Auto naming lets Color Data decide on a name for you. If you don't like it, disable it" Margin="12,0,30,0" FontSize="16" FontStyle="Italic"/>
+							<toolkit:ListPicker x:Name="lp_AutoName" Margin="20,0,100,0" SelectionChanged="lp_AutoName_SelectionChanged">
+								<toolkit:ListPickerItem x:Name="lpi_autoName_all" Content="Auto Name and Desc"/>
+								<toolkit:ListPickerItem x:Name="lpi_autoName_name" Content="Auto Name Only"/>
+								<toolkit:ListPickerItem x:Name="lpi_autoName_desc" Content="Auto Describe Only"/>
+								<toolkit:ListPickerItem x:Name="lpi_autoName_none" Content="Do Not Auto Name"/>
+							</toolkit:ListPicker>
+						</StackPanel>
+					</StackPanel>
+				</ScrollViewer>
+			</controls:PivotItem>
+			<controls:PivotItem Header="Web Settings">
+				<ScrollViewer Margin="12,0">
+					<StackPanel Width="456">
+						<TextBlock Margin="0,0,18,0" Text="all settings saved on change (use back to return to main)" VerticalAlignment="Top" FontSize="16" FontStyle="Italic"/>
+						<Path Data="M0,0 L1,0" Margin="0,10,55,10" Stretch="Fill" Stroke="White" UseLayoutRounding="False" StrokeThickness="2"/>
+						<StackPanel x:Name="sp_trial1" Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Purchase Full Version For More Options"/>
+							<Button x:Name="b_purchase1" Content="Purchase Color Data 3.0" Margin="0,12,50,0" Tap="purchase_Tap" Height="75"/>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Web Account Code"/>
+							<TextBlock TextWrapping="Wrap" Text="The web account code is your key to accessing your colors on the web" Margin="12,-1,30,0" FontSize="16" FontStyle="Italic"/>
+							<StackPanel Orientation="Horizontal">
+								<TextBox TextWrapping="Wrap" Text="no code" Margin="8,0,0,0" IsEnabled="True" HorizontalAlignment="Left" x:Name="tbox_webCode" IsReadOnly="True" IsHitTestVisible="True" />
+							</StackPanel>
+						</StackPanel>
+						<StackPanel Margin="20,10,0,10" Orientation="Vertical">
+							<TextBlock TextWrapping="Wrap" Text="Web Communication Settings"/>
+							<TextBlock TextWrapping="Wrap" Text="Web communications settings lets you decide if and when your color data is uploaded to the web" Margin="12,0,30,0" FontSize="16" FontStyle="Italic"/>
+							<toolkit:ListPicker x:Name="lp_uploadSettings" Margin="20,0,100,0" SelectionChanged="lp_uploadSettings_SelectionChanged" >
+								<toolkit:ListPickerItem x:Name="lpi_uploadSettings_auto" Content="Auto Upload"/>
+								<toolkit:ListPickerItem x:Name="lpi_uploadSettings_manual" Content="Manual Upload"/>
+								<toolkit:ListPickerItem x:Name="lpi_uploadSettings_disabled" Content="Disable Web Access"/>
+							</toolkit:ListPicker>
+						</StackPanel>
+						<Button x:Name="b_forceSync" Content="Force Web Sync" HorizontalAlignment="Right" Margin="0,12,70,0" IsEnabled="False" Tap="forceSync_Tap"/>
+						<StackPanel/>
+					</StackPanel>
+				</ScrollViewer>
+			</controls:PivotItem>
+		</controls:Pivot>
+
+		<my:Waiting x:Name="w_waiting" Visibility="Collapsed"/>
+
+	</Grid>
+
+</phone:PhoneApplicationPage>

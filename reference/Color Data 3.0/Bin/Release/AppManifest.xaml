@@ -1,0 +1,8 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Color Data 3.0" EntryPointType="Color_Data_3._0.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Color Data 3.0" Source="Color Data 3.0.dll" />
+    <AssemblyPart x:Name="colordata_controls" Source="colordata_controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+  </Deployment.Parts>
+</Deployment>

@@ -1,0 +1,128 @@
+﻿<UserControl x:Class="Color_Data_3._0.Controls.colorDatabaseList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:my="clr-namespace:Color_Data_3._0.Controls"
+	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:local="clr-namespace:Color_Data_3._0.Controls" 
+	xmlns:prism="clr-namespace:Phone7.Fx.Controls;assembly=Phone7.Fx" 
+    mc:Ignorable="d"
+    Height="800" Width="480" >
+	<UserControl.Resources>
+		<!-- The group header template, for groups in the main list -->
+		<DataTemplate x:Key="groupHeaderTemplate">
+			<Border x:Name="border" 
+					BorderBrush="{StaticResource PhoneAccentBrush}" 
+					BorderThickness="1" 
+					Background="Black"
+					Margin="0,20,10,10" 
+					HorizontalAlignment="Left" VerticalAlignment="Top" 
+					Width="100" Height="100" >
+				<TextBlock x:Name="textBlock" 
+				   Text="{Binding Title, FallbackValue=g}" 
+				   FontSize="55" 
+				   Foreground="{StaticResource PhoneAccentBrush}" 
+				   VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,0,6,6"/>
+			</Border>
+		</DataTemplate>
+		<DataTemplate x:Key="groupItemTemplate" >
+			<my:headerButton Tag="{Binding Title}" IsEnabled="{Binding isNotEmpty}"></my:headerButton>
+		</DataTemplate>
+		<DataTemplate x:Key="colorItemTemplate">
+			<my:colorButton2 
+					Height="80"
+					Content="{Binding colorName}"
+					Background="{Binding colorBrush}"
+					HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+					Margin="10,10,10,0"
+					Tap="colorButton_Tap" />
+		</DataTemplate>
+
+		<Style x:Key="WatermarkedTextBoxStyle1" TargetType="prism:WatermarkedTextBox">
+			<Setter Property="WatermarkBrush" Value="{StaticResource PhoneTextBoxReadOnlyBrush}"/>
+			<Setter Property="Watermark" Value="enter text"/>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="prism:WatermarkedTextBox">
+						<Grid x:Name="Root">
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="WatermarkStates">
+									<VisualStateGroup.Transitions>
+										<VisualTransition GeneratedDuration="00:00:00.2"/>
+									</VisualStateGroup.Transitions>
+									<VisualState x:Name="Normal">
+										<Storyboard>
+											<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.001" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="_watermarkGrid">
+												<LinearDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+									<VisualState x:Name="Watermarked">
+										<Storyboard>
+											<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.001" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="_watermarkGrid">
+												<LinearDoubleKeyFrame KeyTime="00:00:00" Value="0.9"/>
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+								<VisualStateGroup x:Name="FocusStates">
+									<VisualStateGroup.Transitions>
+										<VisualTransition GeneratedDuration="0"/>
+										<VisualTransition GeneratedDuration="0:0:0.1" To="Focused"/>
+									</VisualStateGroup.Transitions>
+									<VisualState x:Name="Unfocused"/>
+									<VisualState x:Name="Focused">
+										<Storyboard>
+											<DoubleAnimation To="0.0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="_watermark"/>
+										</Storyboard>
+									</VisualState>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<TextBox x:Name="_text" InputScope="{TemplateBinding InputScope}" TextWrapping="{TemplateBinding TextWrapping}" Text="{TemplateBinding Text}" FontSize="{TemplateBinding FontSize}" Margin="0,8,0,0"/>
+							<Grid x:Name="_watermarkGrid" Margin="6,17,0,0">
+								<TextBlock x:Name="_watermark" Foreground="{TemplateBinding WatermarkBrush}" FontSize="{TemplateBinding FontSize}" FontFamily="{StaticResource PhoneFontFamilyNormal}" HorizontalAlignment="Left" IsHitTestVisible="False" Margin="{StaticResource PhoneTouchTargetOverhang}" Style="{StaticResource PhoneTextNormalStyle}" TextWrapping="Wrap" Text="{TemplateBinding Watermark}" VerticalAlignment="Top"/>
+							</Grid>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<ItemsPanelTemplate x:Key="GroupItemsPanelTemplate">
+			<toolkit:WrapPanel/>
+		</ItemsPanelTemplate>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="Black">
+		<Grid Margin="0,10,0,0" d:LayoutOverrides="Height">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="110"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<StackPanel Margin="10" Orientation="Horizontal">
+				<prism:WatermarkedTextBox 
+					x:Name="tb_search" 
+					Height="90" Width="380" 
+					FontSize="28"
+					Style="{StaticResource WatermarkedTextBoxStyle1}" 
+					Watermark="search" 
+					KeyUp="tb_search_KeyUp" />
+				<local:imageButton 
+									iconDark="/Images/dark/search.png" iconLight="/Images/light/search.png" 
+									Margin="0" Width="80" Height="80" 
+									Tap="imageButton_Tap" />
+			</StackPanel>
+			<toolkit:LongListSelector  
+				x:Name="colorsList"
+				Background="Transparent" 
+				ItemTemplate="{StaticResource colorItemTemplate}"
+				GroupHeaderTemplate="{StaticResource groupHeaderTemplate}"
+				GroupItemTemplate="{StaticResource groupItemTemplate}" 
+				Grid.Row="1" Margin="10,10,10,0" 
+				GroupItemsPanel="{StaticResource GroupItemsPanelTemplate}" />
+
+		</Grid>
+
+	</Grid>
+
+</UserControl>

@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://inprocessout.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://inprocessout.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://inprocessout.com/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
+      <s:element name="requestUserId">
+        <s:complexType />
+      </s:element>
+      <s:element name="requestUserIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestUserIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadUserResult" type="tns:userRequestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="userRequestResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="User" type="tns:user" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequestResult" type="tns:requestResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="user">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="publicDefault" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="sets" type="tns:ArrayOfSet" />
+          <s:element minOccurs="0" maxOccurs="1" name="colors" type="tns:ArrayOfColor" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSet">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="set" nillable="true" type="tns:set" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="set">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="colors" type="tns:ArrayOfSetColor" />
+          <s:element minOccurs="0" maxOccurs="1" name="tags" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="picture" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="rating" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ratingCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="dateCreated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastUpdated" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="isPublic" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSetColor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="setColor" nillable="true" type="tns:setColor" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="setColor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Color" type="tns:color" />
+          <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="y" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="position" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="z" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IconSize" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="color">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="id" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="r" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="g" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="b" type="s:short" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfColor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="color" nillable="true" type="tns:color" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="requestResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="success" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="result" type="tns:ResultType" />
+          <s:element minOccurs="1" maxOccurs="1" name="setId" type="s1:guid" />
+          <s:element minOccurs="1" maxOccurs="1" name="colorId" type="s1:guid" />
+          <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ResultType">
+        <s:restriction base="s:string">
+          <s:enumeration value="retrieved" />
+          <s:enumeration value="updated" />
+          <s:enumeration value="inserted" />
+          <s:enumeration value="deleted" />
+          <s:enumeration value="delete_notPresent" />
+          <s:enumeration value="userIdNotValid" />
+          <s:enumeration value="setIdNotValid" />
+          <s:enumeration value="colorIdNotValid" />
+          <s:enumeration value="pictureConversion" />
+          <s:enumeration value="failure_unknown" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UploadSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s" type="tns:set" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadSetResult" type="tns:requestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSetColor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setId" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="sc" type="tns:setColor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSetColorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadSetColorResult" type="tns:requestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadColor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="tns:color" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadColorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadColorResult" type="tns:requestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadPicture">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="setId" type="s1:guid" />
+            <s:element minOccurs="0" maxOccurs="1" name="picture" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadPictureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadPictureResult" type="tns:requestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteColor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteColorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteColorResult" type="tns:requestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteSetResult" type="tns:requestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSetColor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="set_id" type="s1:guid" />
+            <s:element minOccurs="1" maxOccurs="1" name="color_id" type="s1:guid" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteSetColorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteSetColorResult" type="tns:requestResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="guid">
+        <s:restriction base="s:string">
+          <s:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="requestUserIdSoapIn">
+    <wsdl:part name="parameters" element="tns:requestUserId" />
+  </wsdl:message>
+  <wsdl:message name="requestUserIdSoapOut">
+    <wsdl:part name="parameters" element="tns:requestUserIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadUserSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadUser" />
+  </wsdl:message>
+  <wsdl:message name="DownloadUserSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadSetSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadSet" />
+  </wsdl:message>
+  <wsdl:message name="UploadSetSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadSetColorSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadSetColor" />
+  </wsdl:message>
+  <wsdl:message name="UploadSetColorSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadSetColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadColorSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadColor" />
+  </wsdl:message>
+  <wsdl:message name="UploadColorSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadPictureSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadPicture" />
+  </wsdl:message>
+  <wsdl:message name="UploadPictureSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadPictureResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteColorSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteColor" />
+  </wsdl:message>
+  <wsdl:message name="DeleteColorSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteColorResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSetSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSet" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSetSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSetColorSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteSetColor" />
+  </wsdl:message>
+  <wsdl:message name="DeleteSetColorSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteSetColorResponse" />
+  </wsdl:message>
+  <wsdl:portType name="colordata3Soap">
+    <wsdl:operation name="requestUserId">
+      <wsdl:input message="tns:requestUserIdSoapIn" />
+      <wsdl:output message="tns:requestUserIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadUser">
+      <wsdl:input message="tns:DownloadUserSoapIn" />
+      <wsdl:output message="tns:DownloadUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadSet">
+      <wsdl:input message="tns:UploadSetSoapIn" />
+      <wsdl:output message="tns:UploadSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadSetColor">
+      <wsdl:input message="tns:UploadSetColorSoapIn" />
+      <wsdl:output message="tns:UploadSetColorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadColor">
+      <wsdl:input message="tns:UploadColorSoapIn" />
+      <wsdl:output message="tns:UploadColorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadPicture">
+      <wsdl:input message="tns:UploadPictureSoapIn" />
+      <wsdl:output message="tns:UploadPictureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteColor">
+      <wsdl:input message="tns:DeleteColorSoapIn" />
+      <wsdl:output message="tns:DeleteColorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSet">
+      <wsdl:input message="tns:DeleteSetSoapIn" />
+      <wsdl:output message="tns:DeleteSetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSetColor">
+      <wsdl:input message="tns:DeleteSetColorSoapIn" />
+      <wsdl:output message="tns:DeleteSetColorSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="colordata3Soap" type="tns:colordata3Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="requestUserId">
+      <soap:operation soapAction="http://inprocessout.com/requestUserId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadUser">
+      <soap:operation soapAction="http://inprocessout.com/DownloadUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSet">
+      <soap:operation soapAction="http://inprocessout.com/UploadSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSetColor">
+      <soap:operation soapAction="http://inprocessout.com/UploadSetColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadColor">
+      <soap:operation soapAction="http://inprocessout.com/UploadColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadPicture">
+      <soap:operation soapAction="http://inprocessout.com/UploadPicture" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteColor">
+      <soap:operation soapAction="http://inprocessout.com/DeleteColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSet">
+      <soap:operation soapAction="http://inprocessout.com/DeleteSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSetColor">
+      <soap:operation soapAction="http://inprocessout.com/DeleteSetColor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="colordata3Soap12" type="tns:colordata3Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="requestUserId">
+      <soap12:operation soapAction="http://inprocessout.com/requestUserId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadUser">
+      <soap12:operation soapAction="http://inprocessout.com/DownloadUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSet">
+      <soap12:operation soapAction="http://inprocessout.com/UploadSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSetColor">
+      <soap12:operation soapAction="http://inprocessout.com/UploadSetColor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadColor">
+      <soap12:operation soapAction="http://inprocessout.com/UploadColor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadPicture">
+      <soap12:operation soapAction="http://inprocessout.com/UploadPicture" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteColor">
+      <soap12:operation soapAction="http://inprocessout.com/DeleteColor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSet">
+      <soap12:operation soapAction="http://inprocessout.com/DeleteSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSetColor">
+      <soap12:operation soapAction="http://inprocessout.com/DeleteSetColor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="colordata3">
+    <wsdl:port name="colordata3Soap" binding="tns:colordata3Soap">
+      <soap:address location="http://www.colordata.inprocessout.com/services/colordata3.asmx" />
+    </wsdl:port>
+    <wsdl:port name="colordata3Soap12" binding="tns:colordata3Soap12">
+      <soap12:address location="http://www.colordata.inprocessout.com/services/colordata3.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

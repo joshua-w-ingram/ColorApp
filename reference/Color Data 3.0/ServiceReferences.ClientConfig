@@ -1,0 +1,16 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="colordata3Soap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://www.colordata.inprocessout.com/services/colordata3.asmx"
+                binding="basicHttpBinding" bindingConfiguration="colordata3Soap"
+                contract="cd3.colordata3Soap" name="colordata3Soap" />
+        </client>
+    </system.serviceModel>
+</configuration>

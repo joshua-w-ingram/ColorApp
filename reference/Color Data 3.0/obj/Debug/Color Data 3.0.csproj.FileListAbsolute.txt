@@ -1,0 +1,119 @@
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\ApplicationIcon.png
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\Background.png
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\Color Data 3.0.dll
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\Color Data 3.0.pdb
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\AppManifest.xaml
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\Color_Data_3._0.xap
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\obj\Debug\App.g.i.cs
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\obj\Debug\MainPage.g.i.cs
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\obj\Debug\Color Data 3.0.g.resources
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\obj\Debug\Color Data 3.0.dll
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\obj\Debug\Color Data 3.0.pdb
+C:\Users\ijosh\AppData\Local\Temporary Projects\Color Data 3.0\obj\Debug\XapCacheFile.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Images\ApplicationIcon.png
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Images\Background.png
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Color_Data_3.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Color_Data_3.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\AppManifest.xaml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Color_Data_3._0.xap
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Phone7.Fx.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Expression.Drawing.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\App.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\colorDatabaseList.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\colorButton2.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\pictureList.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\headerButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\EditSet.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\EditColor.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\AnimatedSplashScreen.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\Setup.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\simpleColorButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\colorButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\colorHolder.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\colorLocator.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\colorRect.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\colorSquare.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\diver.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\imageButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\pSlider.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\setButton.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\setRect.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Controls\Waiting.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Data\ColorData.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Data\NamedColorData.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Data\SetArrangement.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Data\SetData.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\colorOverlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\arrangementOverlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\help.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\selectorOverlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\tweakOverlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\namedColorOverlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\setOverlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\mainPageOverlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\overlay.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Selectors\ColorSelector.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\MainPage.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Support\Settings.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Selectors\CameraLibrarySelector.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Color_Data_3.g.resources
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Color_Data_3.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Color_Data_3.pdb
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\XapCacheFile.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Debug\Selectors\QuickSelector.g.i.cs
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Advertising.Mobile.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Advertising.Mobile.UI.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\Microsoft.Advertising.Mobile.UI.xml
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\cs-CZ\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\da-DK\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\de-DE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\el-GR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\en-GB\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\es-ES\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\fi-FI\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\fr-FR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\hu-HU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\it-IT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\ja-JP\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\ko-KR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\nb-NO\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\nl-NL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\pl-PL\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\pt-BR\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\pt-PT\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\ru-RU\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\sv-SE\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\zh-CN\Microsoft.Advertising.Mobile.resources.dll
+C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Debug\zh-TW\Microsoft.Advertising.Mobile.resources.dll

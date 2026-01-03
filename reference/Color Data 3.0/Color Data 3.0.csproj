@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEAEC1D8-8BD9-4DD4-8759-C6D86871ACB6}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Color_Data_3._0</RootNamespace>
+    <AssemblyName>Color_Data_3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Color_Data_3._0.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Color_Data_3._0.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Trial|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Trial\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;TRIAL</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Phone7.Fx">
+      <HintPath>..\..\..\Phone7.Fx.dll</HintPath>
+    </Reference>
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ApplicationLicense.cs" />
+    <Compile Include="Classes\cdDb_DataClasses.cs" />
+    <Compile Include="Classes\ColorClasses\CMYK.cs" />
+    <Compile Include="Classes\ColorClasses\HSL.cs" />
+    <Compile Include="Classes\ColorClasses\MathHelper.cs" />
+    <Compile Include="Classes\ColorClasses\RGB.cs" />
+    <Compile Include="Classes\ColorLists\Group.cs" />
+    <Compile Include="Classes\colorModel.cs" />
+    <Compile Include="Classes\communicationHelper.cs" />
+    <Compile Include="Classes\Converters\BoolToVisibility.cs" />
+    <Compile Include="Classes\Converters\BoolToBrush.cs" />
+    <Compile Include="Classes\dbConnection.cs" />
+    <Compile Include="Classes\LiveTileImage.cs" />
+    <Compile Include="Classes\MainViewModel.cs" />
+    <Compile Include="Classes\namedColor.cs" />
+    <Compile Include="Classes\pictureModel.cs" />
+    <Compile Include="Classes\setColorComparer.cs" />
+    <Compile Include="Classes\setColorModel.cs" />
+    <Compile Include="Classes\setModel.cs" />
+    <Compile Include="Classes\StorageHelper.cs" />
+    <Compile Include="Classes\xmlHelper.cs" />
+    <Compile Include="Controls\AnimatedSplashScreen.xaml.cs">
+      <DependentUpon>AnimatedSplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\colorButton.xaml.cs">
+      <DependentUpon>colorButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\colorDatabaseList.xaml.cs">
+      <DependentUpon>colorDatabaseList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\colorHolder.xaml.cs">
+      <DependentUpon>colorHolder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\colorLocator.xaml.cs">
+      <DependentUpon>colorLocator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\colorRect.xaml.cs">
+      <DependentUpon>colorRect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\colorSquare.xaml.cs">
+      <DependentUpon>colorSquare.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\colorButton2.xaml.cs">
+      <DependentUpon>colorButton2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\pictureList.xaml.cs">
+      <DependentUpon>pictureList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\headerButton.xaml.cs">
+      <DependentUpon>headerButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EditSet.xaml.cs">
+      <DependentUpon>EditSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\diver.xaml.cs">
+      <DependentUpon>diver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EditColor.xaml.cs">
+      <DependentUpon>EditColor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\imageButton.xaml.cs">
+      <DependentUpon>imageButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\pSlider.xaml.cs">
+      <DependentUpon>pSlider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\setButton.xaml.cs">
+      <DependentUpon>setButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\setRect.xaml.cs">
+      <DependentUpon>setRect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Selectors\QuickSelector.xaml.cs">
+      <DependentUpon>QuickSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Setup.xaml.cs">
+      <DependentUpon>Setup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\simpleColorButton.xaml.cs">
+      <DependentUpon>simpleColorButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Waiting.xaml.cs">
+      <DependentUpon>Waiting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ColorData.xaml.cs">
+      <DependentUpon>ColorData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\NamedColorData.xaml.cs">
+      <DependentUpon>NamedColorData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SetArrangement.xaml.cs">
+      <DependentUpon>SetArrangement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SetData.xaml.cs">
+      <DependentUpon>SetData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SampleData\colorSquareModel.cs" />
+    <Compile Include="SampleData\editPopupModel.cs" />
+    <Compile Include="Selectors\colorChooser.cs" />
+    <Compile Include="Selectors\ColorSelector.xaml.cs">
+      <DependentUpon>ColorSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\cd3\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Support\colorOverlay.xaml.cs">
+      <DependentUpon>colorOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\arrangementOverlay.xaml.cs">
+      <DependentUpon>arrangementOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\help.xaml.cs">
+      <DependentUpon>help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\selectorOverlay.xaml.cs">
+      <DependentUpon>selectorOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\tweakOverlay.xaml.cs">
+      <DependentUpon>tweakOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\namedColorOverlay.xaml.cs">
+      <DependentUpon>namedColorOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\setOverlay.xaml.cs">
+      <DependentUpon>setOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\mainPageOverlay.xaml.cs">
+      <DependentUpon>mainPageOverlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Selectors\CameraLibrarySelector.xaml.cs">
+      <DependentUpon>CameraLibrarySelector.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Support\overlay.xaml.cs">
+      <DependentUpon>overlay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Controls\colorDatabaseList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\colorButton2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\pictureList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\headerButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\EditSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\EditColor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\AnimatedSplashScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Selectors\QuickSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Support\Setup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\simpleColorButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\colorButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\colorHolder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\colorLocator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\colorRect.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\colorSquare.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\diver.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\imageButton.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\pSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\setButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\setRect.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Waiting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Data\ColorData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Data\NamedColorData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Data\SetArrangement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Data\SetData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Support\colorOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Support\arrangementOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Support\help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Support\selectorOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Support\tweakOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Support\namedColorOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Support\setOverlay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Support\mainPageOverlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Support\overlay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="SampleData\sampleColorSquare.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="SampleData\sampleEditPopup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Selectors\ColorSelector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Support\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\cd3\colordata31.wsdl" />
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.DeleteColorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.DeleteSetColorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.DeleteSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.DownloadUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.requestUserIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.UploadColorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.UploadPictureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.UploadSetColorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\cd3\Color_Data_3._0.cd3.UploadSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <Content Include="Images\Background_small.png" />
+    <Content Include="Images\dark\eye.png" />
+    <Content Include="Images\dark\pause.png" />
+    <Content Include="Images\dark\play.png" />
+    <Content Include="Images\light\eye.png" />
+    <Content Include="Images\light\pause.png" />
+    <Content Include="Images\light\play.png" />
+    <None Include="Service References\cd3\colordata31.disco" />
+    <Content Include="ServiceReferences.ClientConfig" />
+    <Resource Include="Classes\ColorLists\microsoftColors.xml" />
+    <Resource Include="Classes\ColorLists\crayonColors.xml" />
+    <Resource Include="Classes\ColorLists\w3cColors.xml" />
+    <Resource Include="Classes\ColorLists\wikiColors.xml" />
+    <Content Include="Fonts\homesteaddisplay.ttf" />
+    <Content Include="Fonts\homesteadinline.ttf" />
+    <Content Include="Fonts\homesteadregular.ttf" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+    <Page Include="Selectors\CameraLibrarySelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\PanoramaBackground.png" />
+    <Content Include="Images\cd_Images\case.png" />
+    <Content Include="Images\cd_Images\dark_remove.png" />
+    <Content Include="Images\cd_Images\Image.png" />
+    <Content Include="Images\cd_Images\light_remove.png" />
+    <Content Include="Images\dark\add.png" />
+    <Content Include="Images\dark\addSet.png" />
+    <Content Include="Images\dark\area.png" />
+    <Content Include="Images\dark\arrange.png" />
+    <Content Include="Images\dark\back.png" />
+    <Content Include="Images\dark\cancel.png" />
+    <Content Include="Images\dark\check.png" />
+    <Content Include="Images\dark\down.png" />
+    <Content Include="Images\dark\point.png" />
+    <Content Include="Images\dark\questionmark.png" />
+    <Content Include="Images\dark\remove.png" />
+    <Content Include="Images\dark\search.png" />
+    <Content Include="Images\dark\sort.png" />
+    <Content Include="Images\dark\up.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\help\arrangement.png" />
+    <Content Include="Images\help\color1.png" />
+    <Content Include="Images\help\color2.png" />
+    <Content Include="Images\help\colorList.png" />
+    <Content Include="Images\help\manual.png" />
+    <Content Include="Images\help\namedcolor1.png" />
+    <Content Include="Images\help\namedcolor2.png" />
+    <Content Include="Images\help\selector1.png" />
+    <Content Include="Images\help\selector2.png" />
+    <Content Include="Images\help\set1.png" />
+    <Content Include="Images\help\set2.png" />
+    <Content Include="Images\help\setList.png" />
+    <Content Include="Images\help\starter.png" />
+    <Content Include="Images\help\tweak.png" />
+    <Content Include="Images\light\arrange.png" />
+    <Content Include="Images\light\download.png" />
+    <Content Include="Images\light\edit.png" />
+    <Content Include="Images\light\email.png" />
+    <Content Include="Images\light\folder.png" />
+    <Content Include="Images\light\grow.png" />
+    <Content Include="Images\light\merge.png" />
+    <Content Include="Images\light\next.png" />
+    <Content Include="Images\light\questionmark.png" />
+    <Content Include="Images\light\removeColor.png" />
+    <Content Include="Images\light\search.png" />
+    <Content Include="Images\light\settings.png" />
+    <Content Include="Images\light\shrink.png" />
+    <Content Include="Images\light\snap.png" />
+    <Content Include="Images\light\sort.png" />
+    <Content Include="Images\light\sync.png" />
+    <Content Include="Images\light\paintbrush.png" />
+    <Content Include="Images\light\trash.png" />
+    <Content Include="Images\light\wrench.png" />
+    <Content Include="Images\light\add.png" />
+    <Content Include="Images\light\addSet.png" />
+    <Content Include="Images\light\area.png" />
+    <Content Include="Images\light\back.png" />
+    <Content Include="Images\light\camera.png" />
+    <Content Include="Images\light\cancel.png" />
+    <Content Include="Images\light\check.png" />
+    <Content Include="Images\light\down.png" />
+    <Content Include="Images\light\point.png" />
+    <Content Include="Images\light\remove.png" />
+    <Content Include="Images\light\up.png" />
+    <None Include="Service References\cd3\configuration91.svcinfo" />
+    <None Include="Service References\cd3\configuration.svcinfo" />
+    <None Include="Service References\cd3\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\cd3\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

@@ -1,0 +1,542 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+	xmlns:my="clr-namespace:Color_Data_3._0.Controls"
+    xmlns:System="clr-namespace:System;assembly=mscorlib"
+    xmlns:prism="clr-namespace:Phone7.Fx.Controls;assembly=Phone7.Fx"
+    xmlns:support="clr-namespace:Color_Data_3._0.Support"
+    xmlns:Microsoft_Advertising_Mobile_UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    x:Class="Color_Data_3._0.Selectors.CameraLibrarySelector"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="False" >
+	<phone:PhoneApplicationPage.Resources>
+		<Storyboard x:Name="blinkContinue" RepeatBehavior="3x">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ib_finish">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="SB_Tweak" Completed="SB_Tweak_Completed">
+			<ColorAnimation x:Name="CA_A1" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="A1"/>
+			<ColorAnimation x:Name="CA_A2" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="A2"/>
+			<ColorAnimation x:Name="CA_A3" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="A3"/>
+			<ColorAnimation x:Name="CA_A4" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="A4"/>
+			<ColorAnimation x:Name="CA_A5" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="A5"/>
+
+			<ColorAnimation x:Name="CA_B1" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="B1"/>
+			<ColorAnimation x:Name="CA_B2" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="B2"/>
+			<ColorAnimation x:Name="CA_B3" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="B3"/>
+			<ColorAnimation x:Name="CA_B4" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="B4"/>
+			<ColorAnimation x:Name="CA_B5" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="B5"/>
+
+			<ColorAnimation x:Name="CA_C1" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="C1"/>
+			<ColorAnimation x:Name="CA_C2" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="C2"/>
+			<ColorAnimation x:Name="CA_C3" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="C3"/>
+			<ColorAnimation x:Name="CA_C4" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="C4"/>
+			<ColorAnimation x:Name="CA_C5" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="C5"/>
+
+			<ColorAnimation x:Name="CA_D1" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="D1"/>
+			<ColorAnimation x:Name="CA_D2" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="D2"/>
+			<ColorAnimation x:Name="CA_D3" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="D3"/>
+			<ColorAnimation x:Name="CA_D4" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="D4"/>
+			<ColorAnimation x:Name="CA_D5" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="D5"/>
+
+			<ColorAnimation x:Name="CA_E1" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="E1"/>
+			<ColorAnimation x:Name="CA_E2" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="E2"/>
+			<ColorAnimation x:Name="CA_E3" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="E3"/>
+			<ColorAnimation x:Name="CA_E4" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="E4"/>
+			<ColorAnimation x:Name="CA_E5" Duration="0:0:0.8" To="#FF290804" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="E5"/>
+
+			<DoubleAnimation x:Name="DA_TL1" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_top_L1"/>
+			<DoubleAnimation x:Name="DA_TL2" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_top_L2"/>
+			<DoubleAnimation x:Name="DA_LL1" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_left_L1"/>
+			<DoubleAnimation x:Name="DA_LL2" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_left_L2"/>
+			<DoubleAnimation x:Name="DA_BL1" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_bottom_L1"/>
+			<DoubleAnimation x:Name="DA_BL2" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_bottom_L2"/>
+			<DoubleAnimation x:Name="DA_RL1" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_right_L1"/>
+			<DoubleAnimation x:Name="DA_RL2" Duration="0:0:0.8" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="p_right_L2"/>
+		</Storyboard>
+		<Storyboard x:Name="TweakSelectionHighlight" RepeatBehavior="Forever">
+			<DoubleAnimation Duration="0:0:1" To="8" Storyboard.TargetProperty="(Shape.StrokeDashOffset)" d:IsOptimized="True"/>
+		</Storyboard>
+		<Storyboard x:Name="updateCurrentColor" Completed="updateCurrentColor_Completed">
+			<ColorAnimation x:Name="CA_CurrentColor" Duration="0:0:1" To="#FF233683" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="r_tweakCurrent" d:IsOptimized="True"/>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="r_tweakCurrent">
+				<EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.5"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</phone:PhoneApplicationPage.Resources>
+
+	<phone:PhoneApplicationPage.FontFamily>
+		<StaticResource ResourceKey="PhoneFontFamilyNormal"/>
+	</phone:PhoneApplicationPage.FontFamily>
+	<phone:PhoneApplicationPage.FontSize>
+		<StaticResource ResourceKey="PhoneFontSizeNormal"/>
+	</phone:PhoneApplicationPage.FontSize>
+	<phone:PhoneApplicationPage.Foreground>
+		<StaticResource ResourceKey="PhoneForegroundBrush"/>
+	</phone:PhoneApplicationPage.Foreground>
+
+
+	<!--Sample code showing usage of ApplicationBar-->
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar IsVisible="False" IsMenuEnabled="False"/>
+	</phone:PhoneApplicationPage.ApplicationBar>
+
+
+	<Grid x:Name="LayoutRoot" >
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="VisualStates">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0"/>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="SelectionMode">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_Selector">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="TweakMode">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_Tweak">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="AddColorMode">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_addColor">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="AddSetMode">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="g_addColorSet">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="SelectionStates">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:0.4">
+						<VisualTransition.GeneratedEasingFunction>
+							<CircleEase EasingMode="EaseOut"/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="Normal"/>
+				<VisualState x:Name="AddLocked">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_sampling" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsHitTestVisible)" Storyboard.TargetName="b_sampling">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>False</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_header" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_add" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsHitTestVisible)" Storyboard.TargetName="b_add">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>False</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="RemoveLocked">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.IsEnabled)" Storyboard.TargetName="ib_removeColor">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>True</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsHitTestVisible)" Storyboard.TargetName="b_remove">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>False</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_remove" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="80" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="b_add" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_continue" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsHitTestVisible)" Storyboard.TargetName="b_continue">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>False</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="RemoveMode">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_sampling" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsHitTestVisible)" Storyboard.TargetName="b_sampling">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>False</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_continue" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsHitTestVisible)" Storyboard.TargetName="b_continue">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>False</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_add" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.IsHitTestVisible)" Storyboard.TargetName="b_add">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<System:Boolean>False</System:Boolean>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ib_removeColor">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Collapsed</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ib_removeBack">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimation Duration="0" To="0" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="b_header" d:IsOptimized="True"/>
+						<DoubleAnimation Duration="0" To="-85" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)" Storyboard.TargetName="b_remove" d:IsOptimized="True"/>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="sv_colors">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Thickness>0,-80,0,0</Thickness>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="TweakStates">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:0.3">
+						<VisualTransition.GeneratedEasingFunction>
+							<ExponentialEase EasingMode="EaseOut"/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="tweakNormal"/>
+				<VisualState x:Name="tweakNamedColor">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="200" Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="g_namedColor" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<Grid x:Name="g_grids">
+
+			<Grid x:Name="g_Selector" Margin="0,0,0,0" Visibility="Collapsed">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="140"/>
+				</Grid.RowDefinitions>
+				<Grid x:Name="g_Canvas" Grid.Row="0">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+					<Grid x:Name="g_Picture" Tap="g_Picture_Tap" Background="{x:Null}" Grid.RowSpan="2">
+						<Grid.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform x:Name="i_scale"/>
+								<TranslateTransform x:Name="i_translate"/>
+							</TransformGroup>
+						</Grid.RenderTransform>
+						<toolkit:GestureService.GestureListener>
+							<toolkit:GestureListener  PinchStarted="GestureListener_PinchStarted" PinchDelta="GestureListener_PinchDelta"
+								DragDelta="GestureListener_DragDelta"/>
+						</toolkit:GestureService.GestureListener>
+						<Image x:Name="i_picture" Stretch="Uniform" CacheMode="BitmapCache" />
+						<Grid x:Name="g_Selections"/>
+					</Grid>
+					<Border x:Name="b_header" BorderBrush="{x:Null}" Margin="0,0,0,0" VerticalAlignment="Top" Background="#50272727" IsHitTestVisible="False" Grid.Row="1">
+						<TextBlock x:Name="tb_sampleType"  Margin="5"  Height="30" HorizontalAlignment="Left"  Text="point sampling" VerticalAlignment="Top" IsHitTestVisible="False" Opacity="1" Foreground="White" />
+					</Border>
+					<Rectangle x:Name="r_overlay" Fill="#50272727" HorizontalAlignment="Right" Height="38" Margin="0,40,0,0" VerticalAlignment="Top" Width="80" Grid.Row="1"/>
+					<my:imageButton 
+						x:Name="ib_overlay1" 
+						HorizontalAlignment="Right" 
+						iconDark="/Images/dark/questionmark.png" iconLight="/Images/light/questionmark.png" 
+						Width="58" Margin="0,10,10,12" 
+						Tap="ib_overlay_Tap" Grid.Row="1" VerticalAlignment="Top" />
+					<Grid Grid.Row="1">
+						<Border x:Name="b_sampling"
+							HorizontalAlignment="Left" VerticalAlignment="Top" 
+							Margin="15,55,0,0" CornerRadius="20" Background="#7E000000">
+							<Grid Width="160" Height="80">
+								<my:imageButton x:Name="ib_areaCapture" 
+									Width="68" Height="68" Margin="6,6,6,6"
+									HorizontalAlignment="Left" VerticalAlignment="Center" 
+									iconLight="/Images/light/area.png"
+									iconDark="/Images/dark/area.png"
+									Tap="ib_areaCapture_Tap" />
+								<my:imageButton x:Name="ib_pointCapture" 
+									Width="68" Height="68" Margin="6,6,6,6"
+									HorizontalAlignment="Right" VerticalAlignment="Center"
+									iconLight="/Images/light/point.png"
+									iconDark="/Images/dark/point.png"
+									Tap="ib_pointCapture_Tap"
+									IsEnabled="False"/>
+							</Grid>
+						</Border>
+						<Border x:Name="b_continue"
+							HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+							Margin="0,0,15,15" CornerRadius="20" Background="#7E000000" >
+							<Grid Width="80" Height="80">
+								<my:imageButton x:Name="ib_finish" 
+									Width="68" Height="68" Margin="8,8,8,8"
+									HorizontalAlignment="Center" VerticalAlignment="Center"
+									iconLight="/Images/light/check.png"
+									iconDark="/Images/dark/check.png"
+									Tap="ib_finish_Tap"/>
+							</Grid>
+						</Border>
+						<Border x:Name="b_add"
+							HorizontalAlignment="Left" VerticalAlignment="Bottom" 
+							Margin="15,0,0,100" CornerRadius="20" Background="#7E000000" RenderTransformOrigin="0.5,0.5">
+							<Border.RenderTransform>
+								<CompositeTransform/>
+							</Border.RenderTransform>
+							<Grid Width="80" Height="80">
+								<my:imageButton x:Name="ib_addColor" 
+									Width="68" Height="68" Margin="8,8,8,8"
+									HorizontalAlignment="Center" VerticalAlignment="Center"
+									iconLight="/Images/light/add.png"
+									iconDark="/Images/dark/add.png"
+									Tap="ib_addColor_Tap"/>
+							</Grid>
+						</Border>
+						<Border x:Name="b_remove"
+							HorizontalAlignment="Left" VerticalAlignment="Bottom" 
+							Margin="15,0,0,15" CornerRadius="20" Background="#7E000000" RenderTransformOrigin="0.5,0.5">
+							<Border.RenderTransform>
+								<CompositeTransform/>
+							</Border.RenderTransform>
+							<Grid Width="80" Height="80">
+								<my:imageButton x:Name="ib_removeColor" 
+									Width="68" Height="68" Margin="8,8,8,8"
+									HorizontalAlignment="Center" VerticalAlignment="Center"
+									iconLight="/Images/light/remove.png"
+									iconDark="/Images/dark/remove.png"
+									Tap="ib_removeColor_Tap" />
+								<my:imageButton x:Name="ib_removeBack" 
+									Width="68" Height="68" Margin="8,8,8,8"
+									HorizontalAlignment="Center" VerticalAlignment="Center"
+									iconLight="/Images/light/back.png"
+									iconDark="/Images/dark/back.png"
+									Tap="ib_removeBack_Tap" Visibility="Collapsed"  />
+							</Grid>
+						</Border>
+					</Grid>
+					<Microsoft_Advertising_Mobile_UI:AdControl x:Name="ad1" ApplicationId="test_client" AdUnitId="Image480_80" Height="80" Width="480"/>
+				</Grid>
+				<ScrollViewer x:Name="sv_colors" Grid.Row="1" 
+					HorizontalScrollBarVisibility="Disabled" 
+					VerticalScrollBarVisibility="Disabled" Background="Black">
+					<Grid x:Name="g_colors" Background="Black" VerticalAlignment="Bottom" Height="140"/>
+				</ScrollViewer>
+			</Grid>
+			<Grid x:Name="g_Tweak" Margin="0,0,0,0" Visibility="Collapsed" >
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition Height="400"/>
+					<RowDefinition Height="225"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="1*"/>
+					<ColumnDefinition Width="400"/>
+					<ColumnDefinition Width="1*"/>
+				</Grid.ColumnDefinitions>
+				<Grid Grid.ColumnSpan="3" Margin="0">
+					<Rectangle x:Name="r_tweakOriginal" Fill="#FF0A4A5A" StrokeThickness="0" Margin="0,0,0,50" Width="125" HorizontalAlignment="Left" Tap="r_tweakOriginal_Tap"/>
+					<Rectangle x:Name="r_tweakCurrent" Fill="#FF385A0A" StrokeThickness="0" Margin="130,0,0,50"/>
+					<Rectangle Margin="0" StrokeThickness="0" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Height="50">
+						<Rectangle.Fill>
+							<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+								<GradientStop Color="#FF787878"/>
+								<GradientStop Color="Black" Offset="0.694"/>
+							</LinearGradientBrush>
+						</Rectangle.Fill>
+					</Rectangle>
+				</Grid>
+				<Grid x:Name="g_tweakColors" Grid.Column="1" Margin="0" Grid.Row="1">
+					<Path x:Name="A1" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap"  Data="F1M12.6196,81.1943C15.0476,61.8513,18.0636,42.8213,21.6096,24.4913C40.1826,20.8983,59.4926,17.8473,79.1396,15.4013C77.1646,35.0883,75.4916,55.4653,74.1536,76.1283C53.2036,77.4843,32.5546,79.1853,12.6196,81.1943" Fill="#FFFFEFED" Height="65.793" Stretch="Fill" Width="66.52" HorizontalAlignment="Left" Margin="7.465,7.366,0,0" UseLayoutRounding="False" VerticalAlignment="Top" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="A2" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M84.2153,75.5029C85.5823,54.6199,87.2933,34.0399,89.3133,14.1899C111.5433,11.6769,134.5253,9.91490000000002,157.7623,8.94290000000001C157.0683,29.5169,156.4813,50.8879,156.0133,72.6079C131.8893,73.1369,107.7863,74.1069,84.2153,75.5029" Fill="#FFFFBFBB" Height="66.56" Stretch="Fill" Width="73.547" HorizontalAlignment="Left" Margin="79.061,0.908,0,0" UseLayoutRounding="False" VerticalAlignment="Top" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="A3" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M234.2886,72.417C222.9036,72.225,211.4456,72.128,200.1536,72.128C188.8616,72.128,177.4036,72.225,166.0186,72.417C166.4906,50.619,167.0816,29.182,167.7806,8.55199999999997C178.5406,8.20799999999997,189.3366,8.03499999999997,200.1536,8.03499999999997C210.9716,8.03499999999997,221.7676,8.20799999999997,232.5266,8.55199999999997C233.2256,29.182,233.8166,50.619,234.2886,72.417" Fill="#FFFF9088" Height="64.382" Stretch="Fill" Margin="160.864,0,160.866,0" UseLayoutRounding="False" VerticalAlignment="Top" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="A4" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M316.0923,75.5029C292.5213,74.1069,268.4183,73.1369,244.2943,72.6079C243.8263,50.8879,243.2393,29.5169,242.5453,8.94290000000001C265.7823,9.91490000000002,288.7643,11.6769,310.9943,14.1899C313.0143,34.0399,314.7253,54.6199,316.0923,75.5029" Fill="#FFFF6056" Height="66.56" Stretch="Fill" Margin="0,0.908,79.062,0" UseLayoutRounding="False" VerticalAlignment="Top" HorizontalAlignment="Right" Width="73.547" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="A5" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M387.688,81.1943C367.753,79.1853,347.104,77.4843,326.154,76.1283C324.816,55.4653,323.143,35.0883,321.168,15.4013C340.815,17.8473,360.125,20.8983,378.698,24.4913C382.244,42.8213,385.26,61.8513,387.688,81.1943" Fill="#FFFF2F23" Height="65.793" Stretch="Fill" Width="66.52" HorizontalAlignment="Right" Margin="0,7.366,7.466,0" UseLayoutRounding="False" VerticalAlignment="Top" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="B1" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M6.1265,159.1211C7.1235,136.1121,8.8955,113.3661,11.4015,91.3701C31.5005,89.3141,52.3555,87.5761,73.5305,86.1891C72.1495,109.5031,71.1845,133.3861,70.6525,157.3351C48.6035,157.8121,26.9435,158.4121,6.1265,159.1211" Fill="#FFE8D9D8" Stretch="Fill" Margin="0.972,78.154,0,0" UseLayoutRounding="False" HorizontalAlignment="Left" Height="72.932" VerticalAlignment="Top" Width="67.404" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="B2" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M80.6597,156.46C81.1997,132.358,82.1817,108.329,83.5857,84.892C107.2837,83.474,131.5317,82.485,155.8057,81.95C155.3307,106.072,154.9997,130.754,154.8187,155.459C129.9007,155.641,105.0017,155.977,80.6597,156.46" Fill="#FFE8AEAA" Stretch="Fill" Width="75.146" HorizontalAlignment="Left" Margin="75.505,73.915,0,0" UseLayoutRounding="False" Height="74.51" VerticalAlignment="Top" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="B3" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M235.4878,156.0625C223.6868,155.9965,211.8248,155.9615,200.1538,155.9615C188.4828,155.9615,176.6208,155.9965,164.8198,156.0625C165.0008,131.3105,165.3348,106.5845,165.8118,82.4215C177.2628,82.2265,188.7928,82.1275,200.1538,82.1275C211.5148,82.1275,223.0448,82.2265,234.4958,82.4215C234.9728,106.5845,235.3068,131.3105,235.4878,156.0625" Fill="#FFE8837C" Stretch="Fill" Margin="159.666,74.093,159.666,0" UseLayoutRounding="False" Height="73.935" VerticalAlignment="Top" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="B4" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M319.6479,156.46C295.3059,155.977,270.4069,155.641,245.4889,155.459C245.3079,130.754,244.9769,106.072,244.5019,81.95C268.7759,82.485,293.0239,83.474,316.7219,84.892C318.1259,108.329,319.1079,132.358,319.6479,156.46" Fill="#FFE8574E" Stretch="Fill" Margin="0,73.915,75.506,0" UseLayoutRounding="False" HorizontalAlignment="Right" Height="74.51" VerticalAlignment="Top" Width="75.146" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="B5" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M394.1812,159.1211C373.3642,158.4121,351.7042,157.8121,329.6552,157.3351C329.1232,133.3861,328.1582,109.5031,326.7772,86.1891C347.9522,87.5761,368.8072,89.3141,388.9062,91.3701C391.4122,113.3661,393.1842,136.1121,394.1812,159.1211" Fill="#FFE82B20" Stretch="Fill" Width="67.404" HorizontalAlignment="Right" Margin="0,78.154,0.973,0" UseLayoutRounding="False" Height="72.932" VerticalAlignment="Top" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="C1" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M70.4292,235.5811C48.3062,235.1011,26.5492,234.4961,5.61919999999999,233.7791C5.30919999999999,223.5581,5.15419999999999,213.3051,5.15419999999999,203.0351C5.15419999999999,191.7411,5.3442,180.4271,5.72319999999999,169.1411C26.5962,168.4271,48.3262,167.8221,70.4562,167.3421C70.2552,179.0111,70.1542,190.6881,70.1542,202.1281C70.1542,213.2541,70.2462,224.4831,70.4292,235.5811" Fill="#FFB5AAA9" Stretch="Fill" Margin="0,159.307,0,162.454" UseLayoutRounding="False" HorizontalAlignment="Left" Width="65.302" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="C2" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M154.7544,236.7939C129.8134,236.6119,104.8604,236.2739,80.4344,235.7869C80.2474,224.6219,80.1534,213.3209,80.1534,202.1259C80.1534,190.6199,80.2574,178.8699,80.4614,167.1319C104.8454,166.6459,129.7874,166.3079,154.7544,166.1259C154.6884,177.9279,154.6534,189.7899,154.6534,201.4599C154.6534,213.1309,154.6884,224.9929,154.7544,236.7939" Fill="#FFB58885" Stretch="Fill" Width="74.601" HorizontalAlignment="Left" Margin="74.999,158.091,0,161.241" UseLayoutRounding="False" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="C3" Tap="Tweak_Tap"  Data="F1M200.1538,236.9619C188.4628,236.9619,176.5768,236.9279,164.7548,236.8609C164.6878,225.0389,164.6538,213.1529,164.6538,201.4619C164.6538,189.7709,164.6878,177.8859,164.7548,166.0629C176.5778,165.9959,188.4628,165.9619,200.1538,165.9619C211.8448,165.9619,223.7298,165.9959,235.5528,166.0629C235.6198,177.8859,235.6538,189.7709,235.6538,201.4619C235.6538,213.1529,235.6198,225.0389,235.5528,236.8609C223.7308,236.9279,211.8448,236.9619,200.1538,236.9619" Fill="#FFB56661" Stretch="Fill" Margin="157.5,155.927,157.5,159.073" UseLayoutRounding="False" StrokeThickness="2" Stroke="White" StrokeStartLineCap="Square" StrokeEndLineCap="Square" StrokeDashArray="4 4"/>
+					<Path x:Name="C4" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M245.5532,236.7939C245.6192,224.9929,245.6542,213.1309,245.6542,201.4599C245.6542,189.7899,245.6192,177.9279,245.5532,166.1259C270.5202,166.3079,295.4622,166.6459,319.8462,167.1319C320.0502,178.8699,320.1542,190.6199,320.1542,202.1259C320.1542,213.3209,320.0602,224.6219,319.8732,235.7869C295.4472,236.2739,270.4942,236.6119,245.5532,236.7939" Fill="#FFB5443D" Stretch="Fill" Width="74.601" HorizontalAlignment="Right" Margin="0,158.091,75,161.241" UseLayoutRounding="False" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="C5" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M329.8784,235.5811C330.0614,224.4831,330.1534,213.2541,330.1534,202.1281C330.1534,190.6881,330.0524,179.0111,329.8514,167.3421C351.9814,167.8221,373.7114,168.4271,394.5844,169.1411C394.9634,180.4271,395.1534,191.7411,395.1534,203.0351C395.1534,213.3051,394.9984,223.5581,394.6884,233.7791C373.7584,234.4961,352.0014,235.1011,329.8784,235.5811" Fill="#FFB52219" Stretch="Fill" Width="65.302" HorizontalAlignment="Right" Margin="0,159.307,0.001,162.454" UseLayoutRounding="False" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="D1" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M73.5317,318.0664C52.2967,316.6764,31.3727,314.9304,11.2007,312.8664C8.6857,290.4124,6.9387,267.2254,5.9967,243.7974C26.8787,244.5094,48.5657,245.1104,70.6197,245.5874C71.1417,269.8914,72.1197,294.2204,73.5317,318.0664" Fill="#FF827A79" Height="74.269" Stretch="Fill" Margin="0.842,0,0,79.969" UseLayoutRounding="False" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="67.535" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="D2" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M155.8335,320.9707C131.5445,320.4347,107.2865,319.4477,83.5865,318.0287C82.1515,294.0577,81.1575,269.5777,80.6265,245.1267C105.0145,245.6117,129.9245,245.9477,154.8185,246.1287C155.0025,271.2887,155.3435,296.4147,155.8335,320.9707" Fill="#FF826260" Height="75.844" Stretch="Fill" Width="75.207" HorizontalAlignment="Left" Margin="75.472,0,0,77.064" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="D3" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M200.1538,322.1279C188.8158,322.1279,177.2948,322.0289,165.8398,321.8339C165.3458,297.2399,165.0048,272.0679,164.8198,246.8609C176.6198,246.9279,188.4818,246.9619,200.1538,246.9619C211.8258,246.9619,223.6878,246.9279,235.4878,246.8609C235.3028,272.0679,234.9618,297.2399,234.4678,321.8339C223.0128,322.0289,211.4918,322.1279,200.1538,322.1279" Fill="#FF824946" Height="75.267" Stretch="Fill" Margin="159.666,0,159.666,75.907" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="D4" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M244.4741,320.9707C244.9641,296.4147,245.3051,271.2887,245.4891,246.1287C270.3831,245.9477,295.2931,245.6117,319.6811,245.1267C319.1501,269.5917,318.1571,294.0687,316.7221,318.0287C293.0211,319.4477,268.7631,320.4347,244.4741,320.9707" Fill="#FF82312C" Height="75.844" Stretch="Fill" Margin="0,0,75.473,77.064" UseLayoutRounding="False" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75.207" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="D5" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M326.7769,318.0654C328.1879,294.2334,329.1659,269.9014,329.6879,245.5874C351.7419,245.1104,373.4289,244.5094,394.3109,243.7974C393.3689,267.2254,391.6219,290.4124,389.1069,312.8664C368.9529,314.9284,348.0289,316.6744,326.7769,318.0654" Fill="#FF821812" Height="74.268" Stretch="Fill" Width="67.534" HorizontalAlignment="Right" Margin="0,0,0.843,79.97" UseLayoutRounding="False" VerticalAlignment="Bottom" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="E1" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M79.3228,390.6914C59.6158,388.2414,40.2448,385.1824,21.6098,381.5794C17.9608,362.7074,14.8688,343.0594,12.3978,323.0394C32.4118,325.0594,53.1358,326.7674,74.1548,328.1284C75.5338,349.4434,77.2678,370.4374,79.3228,390.6914" Fill="#FF4D4847" Stretch="Fill" Width="66.925" HorizontalAlignment="Left" Margin="7.244,0,0,7.344" UseLayoutRounding="False" Height="67.652" VerticalAlignment="Bottom" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="E2" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M157.8696,397.1279C134.6616,396.1589,111.7056,394.4029,89.4986,391.8969C87.3976,371.4819,85.6256,350.2839,84.2166,328.7489C107.7916,330.1449,131.9026,331.1159,156.0426,331.6449C156.5286,353.9899,157.1416,375.9709,157.8696,397.1279" Fill="#FF4D3A38" Stretch="Fill" Width="73.653" HorizontalAlignment="Left" Margin="79.062,0,0,0.907" UseLayoutRounding="False" Height="68.379" VerticalAlignment="Bottom" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="E3" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M200.1538,398.0352C189.3758,398.0352,178.6108,397.8632,167.8888,397.5222C167.1568,376.3092,166.5388,354.2612,166.0498,331.8402C177.4358,332.0312,188.8848,332.1282,200.1538,332.1282C211.4228,332.1282,222.8718,332.0312,234.2578,331.8402C233.7688,354.2612,233.1508,376.3092,232.4188,397.5222C221.6968,397.8632,210.9318,398.0352,200.1538,398.0352" Fill="#FF4D2B29" Stretch="Fill" Margin="160.896,0" UseLayoutRounding="False" Height="66.195" VerticalAlignment="Bottom" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="E4" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M242.438,397.1279C243.166,375.9709,243.779,353.9899,244.265,331.6449C268.405,331.1159,292.516,330.1449,316.092,328.7489C314.681,350.3089,312.908,371.5039,310.809,391.8969C288.601,394.4029,265.647,396.1589,242.438,397.1279" Fill="#FF4D1D1A" Stretch="Fill" Margin="0,0,79.062,0.907" UseLayoutRounding="False" HorizontalAlignment="Right" Height="68.379" VerticalAlignment="Bottom" Width="73.654" StrokeThickness="0" StrokeDashArray="4 4"/>
+					<Path x:Name="E5" Tap="Tweak_Tap" DoubleTap="Tweak_DoubleTap" Data="F1M320.9849,390.6914C323.0379,370.4604,324.7719,349.4634,326.1539,328.1284C347.1889,326.7654,367.9129,325.0574,387.9099,323.0394C385.4389,343.0594,382.3469,362.7074,378.6979,381.5794C360.0629,385.1824,340.6919,388.2414,320.9849,390.6914" Fill="#FF4D0E0B" Stretch="Fill" Width="66.925" HorizontalAlignment="Right" Margin="0,0,7.244,7.344" UseLayoutRounding="False" Height="67.652" VerticalAlignment="Bottom" StrokeThickness="0" StrokeDashArray="4 4"/>
+				</Grid>
+				<Grid x:Name="g_Limits" Margin="4,7,6,9" Grid.Column="1" Grid.Row="1">
+					<Path x:Name="p_top_L1" Data="M16.8877,51.2803C73.5937,44.1453,135.3647,40.2263,199.9997,40.2263C264.7547,40.2263,326.6347,44.1593,383.4277,51.3203" Height="19.094" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="7.51,25.407,7.194,0" VerticalAlignment="Top" IsHitTestVisible="False" Opacity="0"/>
+					<Path x:Name="p_top_L2" Data="M5.3774,125.5542C65.1964,121.4662,130.9634,119.2052,199.9994,119.2052C268.0854,119.2052,332.9924,121.4042,392.1484,125.3872" Height="14.349" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="-4,104.386,-1.527,0" VerticalAlignment="Top" IsHitTestVisible="False" Opacity="0"/>
+					<Path x:Name="p_left_L1" Data="M51.7529,386.8301C44.3179,329.1101,40.2259,266.0511,40.2259,200.0001C40.2259,136.3041,44.0319,75.3891,50.9709,19.3611" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="19.527" HorizontalAlignment="Left" Margin="30.848,4.542,0,4.43" IsHitTestVisible="False" Opacity="0"/>
+					<Path x:Name="p_left_L2" Data="M125.5977,395.2598C121.4817,335.2708,119.2047,269.2808,119.2047,200.0008C119.2047,133.0608,121.3297,69.1928,125.1867,10.8418" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="14.393" HorizontalAlignment="Left" Margin="109.827,-3.977,0,-4" IsHitTestVisible="False" Opacity="0"/>
+					<Path x:Name="p_bottom_L1" Data="M384.3853,348.5586C327.3303,355.7956,265.1183,359.7746,199.9993,359.7746C134.9983,359.7746,72.8933,355.8106,15.9243,348.5986" Height="19.216" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="6.547,0,6.236,31.485" VerticalAlignment="Bottom" IsHitTestVisible="False" Opacity="0"/>
+					<Path x:Name="p_bottom_L2" Data="M394.6216,274.4463C334.8026,278.5353,269.0346,280.7963,199.9996,280.7963C131.8626,280.7963,66.9096,278.5933,7.71660000000003,274.6053" Height="14.35" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Margin="-1.661,0,-4,110.464" VerticalAlignment="Bottom" IsHitTestVisible="False" Opacity="0"/>
+					<Path x:Name="p_right_L1" Data="M349.022,19.3125C355.965,75.3535,359.774,136.2855,359.774,200.0005C359.774,266.0695,355.679,329.1445,348.241,386.8765" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="19.533" HorizontalAlignment="Right" Margin="0,4.494,30.847,4.383" IsHitTestVisible="False" Opacity="0"/>
+					<Path x:Name="p_right_L2" Data="M274.812,10.8188C278.669,69.1758,280.795,133.0518,280.795,200.0008C280.795,269.0358,278.535,334.8038,274.446,394.6228" StrokeStartLineCap="Flat" Stretch="Fill" StrokeEndLineCap="Flat" Stroke="White" StrokeThickness="8" StrokeMiterLimit="10" StrokeLineJoin="Miter" Width="14.349" HorizontalAlignment="Right" Margin="0,-4,109.826,-3.363" IsHitTestVisible="False" Opacity="0"/>
+				</Grid>
+				<StackPanel Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,15,15" Grid.Row="2" d:LayoutOverrides="GridBox" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
+					<Border Height="80" Margin="10" Width="80" Background="#26FFFFFF" CornerRadius="20" >
+						<my:imageButton x:Name="ib_addSet" iconDark="/Images/dark/addSet.png" iconLight="/Images/light/addSet.png" Tap="ib_addSet_Tap"/>
+					</Border>
+					<Border Height="80" Margin="10,5,10,10" Width="80" d:LayoutOverrides="VerticalAlignment" Background="#26FFFFFF" CornerRadius="20">
+						<my:imageButton x:Name="ib_add" iconDark="/Images/dark/add.png" iconLight="/Images/light/add.png" Tap="ib_add_Tap"/>
+					</Border>
+				</StackPanel>
+				<Grid x:Name="g_namedColor" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="-40,19,0,92" Grid.Row="2" Width="0" Background="#FF0F4950" Tap="g_namedColor_Tap" >
+					<Border VerticalAlignment="Bottom" Margin="0" Background="#3F000000" IsHitTestVisible="False" >
+						<TextBlock x:Name="tb_namedColor" TextWrapping="Wrap" Text="Dark Forest Green" TextAlignment="Right" Height="27" Margin="5" Width="200" HorizontalAlignment="Right"/>
+					</Border>
+					<TextBlock TextWrapping="Wrap" Text="similar named color" VerticalAlignment="Bottom" Margin="-1,0,0,-22" d:LayoutOverrides="Width" TextAlignment="Right" FontSize="13.333" FontWeight="Light" FontFamily="Segoe WP Light"/>
+				</Grid>
+				<Microsoft_Advertising_Mobile_UI:AdControl x:Name="ad2" ApplicationId="test_client" AdUnitId="Image480_80" Height="50" Width="300" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="12,80,0,0" Grid.Row="2" d:LayoutOverrides="GridBox"/>
+			</Grid>
+			<Grid x:Name="g_addColor" Visibility="Collapsed">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="101"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="Auto" MinHeight="100"/>
+				</Grid.RowDefinitions>
+				<Microsoft_Advertising_Mobile_UI:AdControl x:Name="ad3" ApplicationId="test_client" AdUnitId="Image480_80" Height="80" Width="480" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0" d:LayoutOverrides="GridBox"/>
+				<Rectangle x:Name="r_addColor" Fill="#FF144666" Stroke="Black" Grid.RowSpan="2" Grid.Row="1"/>
+				<Rectangle Margin="0" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" Grid.Row="2">
+					<Rectangle.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FF787878"/>
+							<GradientStop Color="Black" Offset="0.694"/>
+						</LinearGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+				<StackPanel Margin="0" Grid.Row="3">
+<!--InputScope="Text"-->
+					<prism:WatermarkedTextBox 
+						x:Name="tb_addColor_name"
+						Watermark="color name"
+						/>
+					<!--InputScope="Text"-->
+					<prism:WatermarkedTextBox
+						x:Name="tb_addColor_description" 
+						Height="208" 
+						TextWrapping="Wrap" 
+						Watermark="description"
+						/>
+				</StackPanel>
+			</Grid>
+			<Grid x:Name="g_addColorSet" Visibility="Collapsed">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="101"/>
+					<RowDefinition Height="50"/>
+					<RowDefinition Height="Auto" MinHeight="100"/>
+				</Grid.RowDefinitions>
+				<Microsoft_Advertising_Mobile_UI:AdControl x:Name="ad4" ApplicationId="test_client" AdUnitId="Image480_80" Height="80" Width="480" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0"/>
+				<my:setRect x:Name="sr_setColors" Margin="0" Grid.Row="1"/>
+				<Rectangle Margin="0" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" Grid.Row="2">
+					<Rectangle.Fill>
+						<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+							<GradientStop Color="#FF787878"/>
+							<GradientStop Color="Black" Offset="0.694"/>
+						</LinearGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+				<StackPanel Margin="0" Grid.Row="3" d:LayoutOverrides="Height, GridBox">
+					<CheckBox x:Name="cb_keepImage" Content="Save Image With Set" Margin="0,0,140,0" IsChecked="True"/>
+					<prism:WatermarkedTextBox 
+						x:Name="tb_addSet_name" 
+						Watermark="set name"
+						InputScope="Text"/>
+					<prism:WatermarkedTextBox 
+						x:Name="tb_addSet_description" 
+						Height="208" 
+						TextWrapping="Wrap" 
+						Watermark="description"
+						InputScope="Text"/>
+				</StackPanel>
+			</Grid>
+			<my:imageButton 
+				x:Name="ib_overlay" 
+				HorizontalAlignment="Right" VerticalAlignment="Top" 
+				iconDark="/Images/dark/questionmark.png" iconLight="/Images/light/questionmark.png" 
+				Width="58" Height="58" Margin="0,10,10,0" 
+				Tap="ib_overlay_Tap" d:IsHidden="True" />
+		</Grid>
+		<Popup x:Name="p_image_overlay"  Closed="p_image_overlay_Closed">
+			<support:overlay x:Name="o_image"/>
+		</Popup>
+		<Popup x:Name="p_manual_overlay"  Closed="p_manual_overlay_Closed">
+			<support:overlay x:Name="o_manual"/>
+		</Popup>
+		<Popup x:Name="p_tweak_overlay"  Closed="p_tweak_overlay_Closed">
+			<support:overlay x:Name="o_tweak"/>
+		</Popup>
+	</Grid>
+
+
+</phone:PhoneApplicationPage>

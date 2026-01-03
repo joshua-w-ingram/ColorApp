@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data maxBufferSize=&quot;2147483647&quot; name=&quot;colordata3Soap&quot;&gt;&lt;security mode=&quot;None&quot; /&gt;&lt;/Data&gt;" bindingType="basicHttpBinding" name="colordata3Soap" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://www.colordata.inprocessout.com/services/colordata3.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;colordata3Soap&quot; contract=&quot;cd3.colordata3Soap&quot; name=&quot;colordata3Soap&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://www.colordata.inprocessout.com/services/colordata3.asmx&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;colordata3Soap&quot; contract=&quot;cd3.colordata3Soap&quot; name=&quot;colordata3Soap&quot; /&gt;" contractName="cd3.colordata3Soap" name="colordata3Soap" />
+  </endpoints>
+</configurationSnapshot>

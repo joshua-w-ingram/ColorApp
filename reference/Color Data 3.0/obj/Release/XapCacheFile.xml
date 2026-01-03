@@ -1,0 +1,34 @@
+﻿<xapCache source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\Color_Data_3._0.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="1/20/2012 8:49:14 AM">
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="1/19/2012 7:55:19 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Background.png" archivePath="Images\Background.png" lastWriteTime="1/19/2012 7:51:09 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\ApplicationIcon.png" archivePath="Images\ApplicationIcon.png" lastWriteTime="1/19/2012 7:50:42 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\obj\Release\Color Data 3.0.dll" archivePath="Color Data 3.0.dll" lastWriteTime="1/20/2012 8:49:12 AM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\colordata_controls\Bin\Release\colordata_controls.dll" archivePath="colordata_controls.dll" lastWriteTime="1/19/2012 8:16:22 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="9/15/2011 3:36:26 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.0\Toolkit\Nov10\Bin\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="11/2/2010 4:36:16 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Fonts\homesteaddisplay.ttf" archivePath="Fonts\homesteaddisplay.ttf" lastWriteTime="1/12/2012 7:10:55 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Fonts\homesteadinline.ttf" archivePath="Fonts\homesteadinline.ttf" lastWriteTime="1/12/2012 7:18:17 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Fonts\homesteadregular.ttf" archivePath="Fonts\homesteadregular.ttf" lastWriteTime="1/12/2012 7:21:20 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\add.png" archivePath="Images\Icons\add.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\addToSet.png" archivePath="Images\Icons\addToSet.png" lastWriteTime="1/16/2012 1:29:22 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\camera.png" archivePath="Images\Icons\camera.png" lastWriteTime="1/15/2012 6:28:09 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\check.png" archivePath="Images\Icons\check.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\download.png" archivePath="Images\Icons\download.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\edit.png" archivePath="Images\Icons\edit.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\email.png" archivePath="Images\Icons\email.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\folder.png" archivePath="Images\Icons\folder.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\grow.png" archivePath="Images\Icons\grow.png" lastWriteTime="9/30/2011 7:18:40 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\merge.png" archivePath="Images\Icons\merge.png" lastWriteTime="1/16/2012 2:32:15 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\minus.png" archivePath="Images\Icons\minus.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\next.png" archivePath="Images\Icons\next.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\questionmark.png" archivePath="Images\Icons\questionmark.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\settings.png" archivePath="Images\Icons\settings.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\shrink.png" archivePath="Images\Icons\shrink.png" lastWriteTime="9/30/2011 7:20:00 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\snap.png" archivePath="Images\Icons\snap.png" lastWriteTime="1/19/2012 12:03:18 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\sync.png" archivePath="Images\Icons\sync.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\cancel.png" archivePath="Images\Icons\cancel.png" lastWriteTime="9/15/2011 3:33:14 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\paintbrush.png" archivePath="Images\Icons\paintbrush.png" lastWriteTime="1/15/2012 6:17:33 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Images\Icons\wrench.png" archivePath="Images\Icons\wrench.png" lastWriteTime="1/15/2012 6:17:43 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="1/19/2012 7:41:03 PM" />
+  <file source="C:\Users\ijosh\Projects\Windows Phone Apps\Color Data 3.0\Color Data 3.0\Bin\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="1/19/2012 7:55:19 PM" />
+</xapCache>
