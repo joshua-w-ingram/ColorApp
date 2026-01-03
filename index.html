@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Color Magic</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon.svg">
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <h1>Color Magic</h1>
+            <p class="tagline">Mix and create amazing colors!</p>
+        </header>
+
+        <!-- Color Preview -->
+        <div id="color-preview">
+            <div id="color-box"></div>
+            <button id="save-color-btn" title="Save this color">Save Color</button>
+        </div>
+
+        <!-- Tab Navigation -->
+        <nav id="tabs">
+            <button class="tab active" data-tab="mixer">Mixer</button>
+            <button class="tab" data-tab="info">Color Info</button>
+            <button class="tab" data-tab="saved">My Colors</button>
+            <button class="tab" data-tab="crayons">Crayons</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <main id="tab-content">
+            <!-- Mixer Tab -->
+            <section id="mixer" class="tab-panel active">
+                <div class="mode-toggle">
+                    <button class="mode-btn active" data-mode="rgb">RGB</button>
+                    <button class="mode-btn" data-mode="hsl">HSL</button>
+                </div>
+
+                <!-- RGB Sliders -->
+                <div id="rgb-sliders" class="slider-group">
+                    <div class="slider-container">
+                        <label>
+                            <span class="slider-label red">Red</span>
+                            <span class="slider-value" id="r-value">128</span>
+                        </label>
+                        <input type="range" id="r-slider" min="0" max="255" value="128" class="slider red-slider">
+                    </div>
+                    <div class="slider-container">
+                        <label>
+                            <span class="slider-label green">Green</span>
+                            <span class="slider-value" id="g-value">128</span>
+                        </label>
+                        <input type="range" id="g-slider" min="0" max="255" value="128" class="slider green-slider">
+                    </div>
+                    <div class="slider-container">
+                        <label>
+                            <span class="slider-label blue">Blue</span>
+                            <span class="slider-value" id="b-value">128</span>
+                        </label>
+                        <input type="range" id="b-slider" min="0" max="255" value="128" class="slider blue-slider">
+                    </div>
+                </div>
+
+                <!-- HSL Sliders -->
+                <div id="hsl-sliders" class="slider-group hidden">
+                    <div class="slider-container">
+                        <label>
+                            <span class="slider-label hue">Hue</span>
+                            <span class="slider-value" id="h-value">180</span>
+                        </label>
+                        <input type="range" id="h-slider" min="0" max="360" value="180" class="slider hue-slider">
+                    </div>
+                    <div class="slider-container">
+                        <label>
+                            <span class="slider-label saturation">Saturation</span>
+                            <span class="slider-value" id="s-value">50</span>
+                        </label>
+                        <input type="range" id="s-slider" min="0" max="100" value="50" class="slider saturation-slider">
+                    </div>
+                    <div class="slider-container">
+                        <label>
+                            <span class="slider-label lightness">Lightness</span>
+                            <span class="slider-value" id="l-value">50</span>
+                        </label>
+                        <input type="range" id="l-slider" min="0" max="100" value="50" class="slider lightness-slider">
+                    </div>
+                </div>
+
+                <button id="random-btn">Random Color!</button>
+            </section>
+
+            <!-- Info Tab -->
+            <section id="info" class="tab-panel">
+                <h2>Color Information</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>HEX Code</h3>
+                        <p id="hex-display" class="code-display">#808080</p>
+                        <button class="copy-btn" data-copy="hex">Copy</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>RGB Values</h3>
+                        <p id="rgb-display" class="code-display">rgb(128, 128, 128)</p>
+                        <button class="copy-btn" data-copy="rgb">Copy</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>HSL Values</h3>
+                        <p id="hsl-display" class="code-display">hsl(0, 0%, 50%)</p>
+                        <button class="copy-btn" data-copy="hsl">Copy</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>CMYK Values</h3>
+                        <p id="cmyk-display" class="code-display">C:0% M:0% Y:0% K:50%</p>
+                    </div>
+                </div>
+                <div class="fun-fact" id="fun-fact">
+                    <h3>Did you know?</h3>
+                    <p id="fact-text">Colors can affect how we feel! Blue is calming, red is exciting!</p>
+                </div>
+            </section>
+
+            <!-- Saved Colors Tab -->
+            <section id="saved" class="tab-panel">
+                <h2>My Saved Colors</h2>
+                <div id="saved-colors" class="color-grid">
+                    <p class="empty-message">No colors saved yet! Go mix some colors and save them!</p>
+                </div>
+            </section>
+
+            <!-- Crayons Tab -->
+            <section id="crayons" class="tab-panel">
+                <h2>Crayon Colors</h2>
+                <input type="text" id="crayon-search" placeholder="Search colors...">
+                <div id="crayon-colors" class="color-grid"></div>
+            </section>
+        </main>
+
+        <!-- Toast for notifications -->
+        <div id="toast" class="toast hidden"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
