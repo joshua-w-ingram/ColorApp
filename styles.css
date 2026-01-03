@@ -535,6 +535,73 @@ header h1 {
     background: var(--danger);
 }
 
+/* Photo Picker - Olivia's Feature! */
+#photo h2 {
+    margin-bottom: 8px;
+    color: var(--secondary);
+}
+
+.photo-instructions {
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+}
+
+#photo-upload-btn {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--success), #059669);
+    border: none;
+    border-radius: var(--radius);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 16px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+}
+
+#photo-upload-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+}
+
+#photo-container {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 16px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#photo-canvas {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: var(--radius-sm);
+    cursor: crosshair;
+    display: none;
+}
+
+#photo-canvas.visible {
+    display: block;
+}
+
+#photo-placeholder {
+    color: var(--text-muted);
+    text-align: center;
+}
+
+#photo-placeholder.hidden {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 400px) {
     header h1 {

@@ -590,6 +590,82 @@ function showToast(message, type = 'success') {
 }
 
 // ============================================
+// PHOTO COLOR PICKER - Olivia's Feature!
+// Pick a color from any photo!
+// ============================================
+
+let photoCanvas = null;
+let photoCtx = null;
+
+function initPhotoPicker() {
+    const photoInput = document.getElementById('photo-input');
+    photoCanvas = document.getElementById('photo-canvas');
+    photoCtx = photoCanvas.getContext('2d');
+
+    // When a photo is selected
+    photoInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const img = new Image();
+            img.onload = () => {
+                // Size the canvas to fit the image
+                const maxWidth = 450;
+                const maxHeight = 400;
+                let width = img.width;
+                let height = img.height;
+
+                // Scale down if too big
+                if (width > maxWidth) {
+                    height = (maxWidth / width) * height;
+                    width = maxWidth;
+                }
+                if (height > maxHeight) {
+                    width = (maxHeight / height) * width;
+                    height = maxHeight;
+                }
+
+                photoCanvas.width = width;
+                photoCanvas.height = height;
+                photoCtx.drawImage(img, 0, 0, width, height);
+
+                // Show the canvas, hide placeholder
+                photoCanvas.classList.add('visible');
+                document.getElementById('photo-placeholder').classList.add('hidden');
+
+                showToast('Photo loaded! Tap anywhere to pick a color!', 'success');
+            };
+            img.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+    });
+
+    // When clicking on the photo
+    photoCanvas.addEventListener('click', (e) => {
+        const rect = photoCanvas.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        // Get the color at that spot
+        const pixel = photoCtx.getImageData(x, y, 1, 1).data;
+        const r = pixel[0];
+        const g = pixel[1];
+        const b = pixel[2];
+
+        // Set this as the current color
+        currentColor = { r, g, b };
+        syncRgbSliders();
+        syncHslSliders();
+        updateColorDisplay();
+
+        const colorName = findClosestColorName(r, g, b);
+        showToast('Found: ' + colorName + '!', 'success');
+    });
+}
+
+// ============================================
 // INITIALIZE THE APP!
 // ============================================
 
@@ -615,6 +691,7 @@ function init() {
     initTabs();
     initModeToggle();
     initCopyButtons();
+    initPhotoPicker();
     renderSavedColors();
     renderCrayonColors();
 

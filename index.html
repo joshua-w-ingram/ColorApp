@@ -33,7 +33,7 @@
         <!-- Tab Navigation -->
         <nav id="tabs">
             <button class="tab active" data-tab="mixer">Mixer</button>
-            <button class="tab" data-tab="info">Color Info</button>
+            <button class="tab" data-tab="photo">Photo</button>
             <button class="tab" data-tab="saved">My Colors</button>
             <button class="tab" data-tab="crayons">Crayons</button>
         </nav>
@@ -143,6 +143,18 @@
                 <h2>Crayon Colors</h2>
                 <input type="text" id="crayon-search" placeholder="Search colors...">
                 <div id="crayon-colors" class="color-grid"></div>
+            </section>
+
+            <!-- Photo Tab - Olivia's idea! -->
+            <section id="photo" class="tab-panel">
+                <h2>Pick Color from Photo</h2>
+                <p class="photo-instructions">Pick a photo, then tap anywhere on it to get that color!</p>
+                <label id="photo-upload-btn" for="photo-input">Choose a Photo</label>
+                <input type="file" id="photo-input" accept="image/*" hidden>
+                <div id="photo-container">
+                    <canvas id="photo-canvas"></canvas>
+                    <p id="photo-placeholder">Your photo will appear here!</p>
+                </div>
             </section>
         </main>
 
