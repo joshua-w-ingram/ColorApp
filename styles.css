@@ -58,6 +58,32 @@ header h1 {
     font-size: 0.85rem;
 }
 
+.made-by {
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+#donate-btn {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 6px 16px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1e1b4b;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(251, 191, 36, 0.4);
+    transition: all 0.2s ease;
+}
+
+#donate-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.5);
+}
+
 /* Color Preview */
 #color-preview {
     display: flex;
