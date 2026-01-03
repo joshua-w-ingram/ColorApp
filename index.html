@@ -38,6 +38,7 @@
             <button class="tab" data-tab="photo">Photo</button>
             <button class="tab" data-tab="saved">My Colors</button>
             <button class="tab" data-tab="crayons">Crayons</button>
+            <button class="tab" data-tab="share">Share</button>
         </nav>
 
         <!-- Tab Content -->
@@ -161,6 +162,16 @@
                     <canvas id="photo-canvas"></canvas>
                     <p id="photo-placeholder">Your photo will appear here!</p>
                 </div>
+            </section>
+
+            <!-- Share Tab - QR Code for friends! -->
+            <section id="share" class="tab-panel">
+                <h2>Share With Friends!</h2>
+                <p class="share-instructions">Show this QR code to your friends - they can scan it with their phone camera to get the app!</p>
+                <div class="qr-container">
+                    <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://joshua-w-ingram.github.io/ColorApp/" alt="QR Code for Color Magic">
+                </div>
+                <p class="share-url">joshua-w-ingram.github.io/ColorApp</p>
             </section>
         </main>
 
